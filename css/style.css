@@ -640,7 +640,7 @@ i:hover {
 .modal-content{
     width: 500px;
     height: 300px;
-    background-color: none;
+    background-color: rgba(245, 222, 179, 0);
 }
 .carrucel-content {
     width: 700px;
