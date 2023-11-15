@@ -1,0 +1,167 @@
+
+
+
+
+
+
+
+
+
+  
+ 
+
+
+.cuerpo{
+    width: 580px;
+    height: 600px;
+    overflow: hidden;
+    background: scroll;
+    display: flex;
+    padding-bottom: 180px; 
+}
+.texto{
+    background-color: #e6ba6785;
+    font-size: 35px;
+    text-align: center;
+    width: 350px;
+    color: #f1f3f4;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+.footer-c {
+    display: flex;
+}
+
+.logo2{
+    width: 20%;
+    border-radius: 50%;
+}
+.redes2{
+    width: 7%;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+.menu2{
+    background-color: #060606d4;
+    border-radius: 20px;
+    font-size: 40px;
+    list-style: none;
+    text-decoration: none;
+    color: #e7e7e7f3;
+    cursor: pointer;
+}
+.formulario{
+    background-color: #18181aa6;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #dfdfdf;
+    list-style: none;
+    width: 682px;
+}
+
+
+
+
+
+.realizados{
+    background-color: #e6b9674d;
+    border-radius: 10px;
+    border: 1px #000000;
+    font-size: 55px;
+    text-decoration: none;
+    width: 90%;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.items-gral {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+.imgcarru {
+    width: 50px;
+    border-radius: 12px;
+}
+i {
+    transition: all 0.3s ease;
+    color: #e9e9e9a2;
+    font-size: 40px;
+}
+i:hover {
+    color: #a09ef0be;
+    font-size: 45px;
+}
+.contentcarru {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5px;
+    position: absolute;
+}
+.imgscroll {
+    width: 580px;
+    padding:  0 50px;
+    border-radius: 15px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }

@@ -1,0 +1,397 @@
+@media (max-width: 1200px) and (min-width: 1019px) {
+    body {
+       background-color: #1d1d1d;
+   }
+}
+@media (max-width: 1020px) and (min-width: 769px) {
+   .grid-content {
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+       grid-template-areas:  
+       "header"
+       "nav"
+       "main"
+       "aside"
+       "footer";
+   }
+   body {
+       background-color: #1d1d1d;
+    .menu {
+        width: 100%;
+        height: 100%;
+        padding: 15px;
+    }
+    .posttattoo {
+        width: 100%;
+        height: auto;
+        .posttattoo1 {
+            .cuidados {
+                width: 100%;
+            }
+            .cicatrizado {
+                width: 100%;
+            }
+        }
+    }
+    .aside-content {
+        width: unset;
+        height: unset;
+        margin: 30px;
+        flex-direction: row;
+     }
+ 
+   } 
+}
+ @media (max-width: 768px) and (min-width: 480px) {
+   .grid-content {
+       grid-template-columns: 1fr;
+       grid-template-rows: auto;
+       grid-template-areas:  
+       "header"
+       "nav"
+       "main"
+       "aside"
+       "footer";
+    }
+    body {
+    background-position-x: center;
+    background-repeat: unset;
+        .cab {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            height: 100%;
+            background-image: none;
+            .img-redes {
+                margin: 30px 50px 20px 50px;
+                padding: 15px;
+                .img-redes__box {
+                    display: flex;
+                    justify-content: center;
+                    .redes {
+                        width: 80%;
+                        border-radius: 30px;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            width: 85%;
+                            box-shadow: 4px 4px 15px #f5e612;
+                        }
+                    }
+                }
+            }
+            .logo1 {
+                width: 80%;
+                height: 60%;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                .logo {
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+        }
+        .content-gral {
+            flex-direction: column;
+            .presenta {
+                justify-content: center;
+                align-items: center;
+                p {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+            .carousel {
+                width: 100%;
+            }
+            .body-carrusel-design {
+                width: 100%;
+                .titledis {
+                    width: 100%;
+                }
+                .dis {
+                    width: 100%;
+                    flex-direction: column;
+                }   
+            }
+            .title-tattoos {
+                width: 100%;
+            }
+            .modalcont {
+                position: fixed;
+                top: 20%;
+                left: 10%;
+                .modal-content {
+                    width: 70%;
+                    .carrucel-content {
+                        height: 100%;
+                    } 
+                }
+            }
+            .prod {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+                p {
+                    font-size: 75%;
+                    padding: 30px;
+                }
+            }
+            .form-content {
+                width: 100%;
+                form {
+                    width: 90%;
+                    .form1 {
+                        width: 100%;
+                    }
+                }
+                
+            }
+            .posttattoo {
+                width: 100%;
+                height: auto;
+                .cuidados {
+                    width: 100%;
+                }
+                .cicatrizado {
+                    width: 100%;
+                }
+            }  
+        }
+        .aside-content {
+            width: unset;
+            height: unset;
+            margin: 25px;
+            flex-direction: column;
+            .valorar {
+                padding-top: 16px;
+            }
+        }
+        .footer-content {
+            justify-content: center;
+            flex-direction: column;
+            .nav-list {
+                width: 100%;
+                flex-direction: column;
+                .menu {
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px 5px;
+                    margin: 5px 0;
+                }
+            }
+           .footer__content__redes {
+            flex-direction: column;
+                .redes-footer {
+                    width: 45%;
+                    margin: 24px;
+                    transition: all 0.3s ease;
+                    &:hover {
+                        width: 60%;
+                        box-shadow: 4px 4px 15px #f5e612;
+                    }
+                }
+            }
+            .logo-content {
+                .logo-footer {
+                    margin: 21px;
+                }
+            }
+        }  
+    }     
+}
+
+    
+@media (max-width: 481px) and (min-width: 320px) {
+    .grid-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "header"
+        "nav"
+        "main"
+        "aside"
+        "footer";
+    }
+    body {
+       background-position-x: center;
+       background-repeat: unset;
+       .cab {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            height: 100%;
+            background-image: none;
+        .img-redes {
+             margin: 30px 50px 20px 50px;
+             padding: 15px;
+            .img-redes__box {
+                 display: flex;
+                 justify-content: center;
+                .redes {
+                    width: 80%;
+                    border-radius: 30px;
+                    transition: all 0.3s ease;
+                    &:hover {
+                         width: 85%;
+                         box-shadow: 4px 4px 15px #f5e612;
+                    }
+                }
+            }
+        }
+        .logo1 {
+             width: 80%;
+             height: 60%;
+             padding: 15px;
+             display: flex;
+             justify-content: center;
+             .logo {
+                 width: 80%;
+                 margin: 0;
+            }
+        }
+    }
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+        .menu {
+            width: 100%;
+            height: 100%;
+            padding: 20px 5px;
+            font-size: 25px;
+            margin: 3px 0;
+        }
+    }
+    .content-gral {
+        flex-direction: column;
+        .presenta {
+            justify-content: center;
+            align-items: center;
+            p {
+                width: 90%;
+                height: auto;
+            } 
+        }
+        .prod {
+            width: 100%;
+             img {
+                 width: 100%;
+             }
+             p {
+                 font-size: 75%;
+                 padding: 30px;
+             }
+         }
+         .posttattoo {
+            width: 100%;
+            height: auto;
+             .cuidados {
+                 width: 100%;
+             }
+             .cicatrizado {
+                 width: 100%;
+             }
+         }
+         .form-content {
+            width: 100%;
+            height: 1087px;
+            h1 {
+                font-size: 40px;
+                color: #eeeeeed8;
+                margin: 50px 0;
+            }
+            form {
+                width: 90%;
+                .form1 {
+                    width: 100%;
+                }
+            }
+        }
+        .body-carrusel-design {
+            width: 100%;
+           .titledis {
+               width: 100%;
+               .dis {
+                   width: 100%;
+                   flex-direction: column;
+               }
+           }
+       }
+       .modalcont {
+            position: fixed;
+            top: 20%;
+            left: 10%;
+            width: 90%;
+            .modal-content {
+                width: 90%;
+                .carousel  {
+                    width: 100%;
+                    .carrucel-content {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+        .title-tattoos {
+            width: 100%;
+        }
+    }
+    .aside-content {
+        width: unset;
+        height: unset;
+        margin: 30px;
+        flex-direction: column;
+        .valorar {
+            padding-top: 16px;
+        }
+    }
+    .footer-content {
+        justify-content: center;
+        flex-direction: column;
+        .footer__content__redes {
+            flex-direction: column;
+            .redes-footer {
+                width: 50%;
+                margin: 24px;
+                transition: all 0.3s ease;
+                &:hover {
+                    width: 60%;
+                    box-shadow: 4px 4px 15px #f5e612;
+                }
+            }
+            .logo-footer {
+                margin: 21px;
+            }
+        }   
+    }
+    }
+    
+    
+    
+   
+   
+    
+  
+  
+  
+ 
+    
+    
+    
+    
+    
+
+
+
+    
+   
+   
+    
+   
+ 
+  
+   
+}

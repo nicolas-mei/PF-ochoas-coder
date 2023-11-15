@@ -1,0 +1,18 @@
+//reset
+@import "./reset/reset.scss" ;
+@import "./reset/vars" ;
+@import "./reset/mixin" ;
+@import "./reset/grid.scss" ;
+
+
+//layout
+@import "./body.scss" ;
+@import "./header" ; 
+@import "./_main" ;
+@import "./aside" ;
+@import "./nav" ;
+@import "./footer" ;
+
+
+//Media Queries
+@import "./reset/mq" ;

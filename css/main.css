@@ -1,0 +1,957 @@
+* {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 100px 1100px 600px;
+  grid-template-areas: "header header header header" "nav    nav    nav    nav" "main   main   main   aside" "footer footer footer footer";
+  row-gap: 20px;
+}
+
+.cab {
+  grid-area: header;
+}
+
+.menu__navi {
+  grid-area: nav;
+}
+
+.content-gral {
+  grid-area: main;
+}
+
+.aside-content {
+  grid-area: aside;
+}
+
+.footer-content {
+  grid-area: footer;
+}
+
+body {
+  background-color: #1b1b1f;
+  background-image: url(../assets/fondo-page.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.cab {
+  margin: auto;
+  background-color: #1b1b1d;
+  background-image: url(../assets/pagina-tatuaje.jpg);
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 92%;
+  border-radius: 29px;
+  border: 2px solid rgba(175, 175, 175, 0.2117647059);
+  display: flex;
+  height: 286px;
+  justify-content: space-between;
+}
+.cab .img-redes {
+  display: flex;
+  align-items: end;
+  margin-left: 22px;
+  margin: 0 0 12px 17px;
+}
+.cab .img-redes .redes {
+  width: 42px;
+  border-radius: 23px;
+  margin: 5px;
+  border: 2px solid #e6ba67;
+}
+.cab .img-redes .redes:hover {
+  width: 50px;
+  box-shadow: 4px 4px 15px #f5e612;
+}
+
+.logo1 {
+  display: flex;
+  align-items: center;
+}
+.logo1 .logo {
+  width: 250px;
+  border-radius: 60%;
+  margin-right: 41px;
+  border: 5px solid rgba(177, 177, 177, 0.5882352941);
+}
+
+.content-gral {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.content-gral main button {
+  bottom: unset;
+  cursor: pointer;
+}
+.content-gral .presenta {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  height: 100%;
+}
+.content-gral .presenta h1 {
+  border: 2px solid rgba(157, 120, 50, 0.4784313725);
+  background-color: rgba(145, 116, 62, 0.4392156863);
+  width: 204px;
+  border-radius: 9px;
+  font-size: 37px;
+  text-align: center;
+  padding: 12px;
+  color: rgba(219, 219, 219, 0.9098039216);
+  cursor: auto;
+  margin: 30px 0;
+}
+.content-gral .presenta .presentacion {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 13px;
+  color: rgba(219, 219, 219, 0.8980392157);
+  font-size: 21px;
+  margin: 0px;
+  padding: 15px;
+  width: 202px;
+  height: 100%;
+}
+.content-gral .carousel {
+  width: 66%;
+}
+.content-gral .carousel .carousel-item a img {
+  width: 100%;
+}
+.content-gral .carousel .carousel-item a img .carousel-caption h5 {
+  font-size: 40px;
+  background-color: rgba(209, 209, 209, 0.337254902);
+  border: 2px solid rgba(70, 70, 70, 0.4235294118);
+}
+.content-gral .carousel .carousel-control-prev-icon {
+  transition: all 0.3s ease;
+  background-color: rgba(115, 115, 115, 0.7411764706);
+  padding: 23px;
+  border-radius: 10px;
+  border-radius: 12px;
+}
+.content-gral .carousel .carousel-control-prev-icon:hover {
+  background-color: rgba(139, 146, 211, 0.7411764706);
+  padding: 26px;
+}
+.content-gral .carousel .carousel-control-prev-icon .carousel-control-next-icon {
+  transition: all 0.3s ease;
+  background-color: rgba(115, 115, 115, 0.7411764706);
+  padding: 23px;
+  border-radius: 10px;
+}
+.content-gral .carousel .carousel-control-prev-icon .carousel-control-next-icon:hover {
+  background-color: rgba(139, 146, 211, 0.7411764706);
+  padding: 26px;
+}
+.content-gral .form-content {
+  background-color: rgba(75, 75, 75, 0.3960784314);
+  border-radius: 20px;
+  border: 3px solid rgba(189, 189, 189, 0.4862745098);
+  width: 800px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 5px 15px rgba(233, 233, 233, 0.8980392157);
+}
+.content-gral .form-content h1 {
+  font-size: 50px;
+  color: rgba(238, 238, 238, 0.8470588235);
+  margin: 50px 0;
+}
+.content-gral .form-content .form1 {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-gral .form-content .form1 .form-items {
+  list-style: none;
+  margin: 15px 0;
+}
+.content-gral .form-content .form1 .form-items .label-pal {
+  font-size: 30px;
+  color: rgba(236, 236, 236, 0.8431372549);
+  display: flex;
+  justify-content: flex-start;
+}
+.content-gral .form-content .form1 .form-items .imput-content {
+  width: 100%;
+  background-color: rgba(78, 78, 78, 0.6352941176);
+  border-radius: 8px;
+  border: 2px solid hwb(0 38% 62%/0.733);
+  font-size: 18px;
+  color: rgba(231, 231, 231, 0.768627451);
+  padding: 20px;
+  box-shadow: 2px 2px 7px #f5f5f5;
+  display: flex;
+}
+.content-gral .form-content .form1 .btnform {
+  float: left;
+  width: 129px;
+  font-size: 20px;
+  background-color: rgba(223, 202, 164, 0.7215686275);
+  color: #272727;
+  margin: 20px 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.content-gral .form-content .form1 .btnform:hover {
+  background-color: rgba(97, 97, 97, 0.768627451);
+  color: rgba(223, 202, 164, 0.7215686275);
+}
+.content-gral .posttattoo {
+  background-color: rgba(24, 24, 26, 0.4666666667);
+  border-radius: 10px;
+  width: 900px;
+  height: 1000px;
+  padding: 10px 30px 30px 30px;
+  margin: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-gral .posttattoo .posttattoo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-gral .posttattoo .posttattoo1 .cuidados {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 10px;
+  font-size: 40px;
+  text-decoration: underline;
+  color: #a7a7a7;
+  text-align: center;
+  width: 400px;
+  margin-bottom: 45px;
+}
+.content-gral .posttattoo .posttattoo1 .cicatrizado {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #a7a7a7;
+  text-align: center;
+  width: 700px;
+  margin: 20px;
+  padding: 15px;
+}
+.content-gral .posttattoo .posttattoo1 .text {
+  font-size: 17px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #d6d6d6;
+}
+.content-gral .body-carrusel-design {
+  width: 800px;
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-gral .body-carrusel-design .titledis {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 10px;
+  border: 1px #000000;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  width: 500px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.content-gral .body-carrusel-design .dis {
+  width: 800px;
+  height: 800px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-gral .body-carrusel-design .dis .btn1 {
+  width: 230px;
+}
+.content-gral .body-carrusel-design .dis .imgcont {
+  width: 100%;
+  border-radius: 9px;
+}
+.content-gral .body-carrusel-design .modal-content {
+  width: 500px;
+  height: 300px;
+  background-color: rgba(245, 222, 179, 0);
+}
+.content-gral .body-carrusel-design .modal-content .imgmodal {
+  width: 100%;
+}
+.content-gral .body-carrusel-design .modal-content .carousel-control-prev-icon {
+  transition: all 0.3s ease;
+  background-color: rgba(115, 115, 115, 0.7411764706);
+  padding: 23px;
+  border-radius: 10px;
+  border-radius: 12px;
+}
+.content-gral .body-carrusel-design .modal-content .carousel-control-prev-icon:hover {
+  background-color: rgba(139, 146, 211, 0.7411764706);
+  padding: 26px;
+}
+.content-gral .body-carrusel-design .modal-content .carousel-control-next-icon {
+  transition: all 0.3s ease;
+  background-color: rgba(115, 115, 115, 0.7411764706);
+  padding: 23px;
+  border-radius: 10px;
+}
+.content-gral .body-carrusel-design .modal-content .carousel-control-next-icon:hover {
+  background-color: rgba(139, 146, 211, 0.7411764706);
+  padding: 26px;
+}
+.content-gral .prod {
+  background-color: rgba(12, 196, 184, 0.1568627451);
+  border-radius: 10px;
+  text-decoration: underline;
+  font-size: 47px;
+  color: #e7e7e7;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-gral .prod img {
+  width: 700px;
+}
+.content-gral .prod p {
+  font-size: 29px;
+  padding: 50px;
+  text-decoration: none;
+}
+.content-gral .tattoos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-gral .tattoos .realizados {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 10px;
+  border: 1px #000000;
+  font-size: 55px;
+  text-decoration: none;
+  width: 90%;
+  text-align: center;
+  padding: 5px;
+}
+.content-gral .tattoos .content-tattoos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+.content-gral .tattoos .content-tattoos .title-tattoos {
+  background-color: rgba(230, 185, 103, 0.3019607843);
+  border-radius: 10px;
+  border: 1px #000000;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: none;
+  width: 700px;
+  padding: 5px;
+  margin: 10px;
+}
+.content-gral .tattoos .content-tattoos #color {
+  background-color: rgba(24, 24, 26, 0.6039215686);
+  border-radius: 10px;
+  width: 90%;
+  height: 213px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-gral .tattoos .content-tattoos #bandg {
+  background-color: rgba(24, 24, 26, 0.6039215686);
+  border-radius: 10px;
+  width: 90%;
+  height: 213px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content-gral .tattoos .content-tattoos #linea {
+  background-color: rgba(24, 24, 26, 0.6039215686);
+  border-radius: 10px;
+  width: 90%;
+  height: 213px;
+  overflow: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.aside-content {
+  background-color: rgba(24, 24, 26, 0.7725490196);
+  border-radius: 12px;
+  width: 213px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  border: 3px solid rgba(79, 79, 79, 0.8196078431);
+}
+
+.valorar {
+  display: flex;
+  flex-direction: column;
+}
+
+div.valoracion {
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 35px 0 0;
+  border: 3px solid rgba(205, 180, 134, 0.2509803922);
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+}
+
+div.valoracion input {
+  position: absolute;
+  top: -100px;
+}
+
+div.valoracion label {
+  float: right;
+  color: #333;
+  width: 23px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+div.valoracion label:hover,
+div.valoracion label:hover ~ label,
+div.valoracion input:checked ~ label {
+  color: #bdbd42;
+}
+
+.valora {
+  background-color: rgba(230, 185, 103, 0.2392156863);
+  border-radius: 12px;
+  color: aliceblue;
+  font-size: 21px;
+  width: 175px;
+  height: auto;
+  justify-content: center;
+  padding: 11px;
+  display: flex;
+  border: 3px solid rgba(205, 180, 134, 0.2509803922);
+}
+
+.indicaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.indicaciones p {
+  font-size: 29px;
+  text-align-last: center;
+  color: #972626;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  margin: 14px;
+}
+
+.items-tat li {
+  border: 2px solid rgba(151, 38, 38, 0.3215686275);
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: left;
+  color: #972626;
+  list-style: none;
+  padding: 12px;
+  margin: 12px;
+}
+
+.img-elec p {
+  font-size: 18px;
+  text-align: center;
+  color: #d6d6d6;
+}
+
+.img-elec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu__navi {
+  width: 100%;
+}
+.menu__navi .nav-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.menu__navi .nav-list .list {
+  display: flex;
+}
+.menu__navi .nav-list .list .menu {
+  background-color: rgba(6, 6, 6, 0.831372549);
+  border-radius: 20px;
+  border: 2px solid rgba(175, 175, 175, 0.2117647059);
+  font-size: 40px;
+  list-style: none;
+  text-decoration: none;
+  color: rgba(231, 231, 231, 0.8901960784);
+  cursor: pointer;
+  width: 200px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+.menu__navi .nav-list .list .menu:hover {
+  background-color: rgba(221, 221, 221, 0.7058823529);
+  color: rgba(43, 43, 43, 0.8784313725);
+}
+
+footer {
+  background-color: rgba(24, 24, 26, 0.5882352941);
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.mapas {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+iframe {
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+
+.footer__nav__menu {
+  width: 90%;
+}
+
+.footer__content__redes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-cont {
+  display: flex;
+  margin: 0 0 0 17px;
+}
+
+.redes-footer {
+  width: 60px;
+  border-radius: 30px;
+  border: 3px solid rgba(157, 157, 157, 0.5803921569);
+  margin: 4px;
+}
+
+.redes-footer:hover {
+  width: 70px;
+  box-shadow: 4px 4px 15px #f5e612;
+}
+
+.logo_content {
+  padding-bottom: 15px;
+}
+
+.logo-footer {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid rgba(68, 68, 68, 0.7137254902);
+  margin: 0 45px 0 0;
+}
+
+@media (max-width: 1200px) and (min-width: 1019px) {
+  body {
+    background-color: #1d1d1d;
+  }
+}
+@media (max-width: 1020px) and (min-width: 769px) {
+  .grid-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  body {
+    background-color: #1d1d1d;
+  }
+  body .menu {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+  }
+  body .posttattoo {
+    width: 100%;
+    height: auto;
+  }
+  body .posttattoo .posttattoo1 .cuidados {
+    width: 100%;
+  }
+  body .posttattoo .posttattoo1 .cicatrizado {
+    width: 100%;
+  }
+  body .aside-content {
+    width: unset;
+    height: unset;
+    margin: 30px;
+    flex-direction: row;
+  }
+}
+@media (max-width: 768px) and (min-width: 480px) {
+  .grid-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  body {
+    background-position-x: center;
+    background-repeat: unset;
+  }
+  body .cab {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100%;
+    background-image: none;
+  }
+  body .cab .img-redes {
+    margin: 30px 50px 20px 50px;
+    padding: 15px;
+  }
+  body .cab .img-redes .img-redes__box {
+    display: flex;
+    justify-content: center;
+  }
+  body .cab .img-redes .img-redes__box .redes {
+    width: 80%;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  body .cab .img-redes .img-redes__box .redes:hover {
+    width: 85%;
+    box-shadow: 4px 4px 15px #f5e612;
+  }
+  body .cab .logo1 {
+    width: 80%;
+    height: 60%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  body .cab .logo1 .logo {
+    width: 80%;
+    margin: 0;
+  }
+  body .content-gral {
+    flex-direction: column;
+  }
+  body .content-gral .presenta {
+    justify-content: center;
+    align-items: center;
+  }
+  body .content-gral .presenta p {
+    width: 90%;
+    height: auto;
+  }
+  body .content-gral .carousel {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design .titledis {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design .dis {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .content-gral .title-tattoos {
+    width: 100%;
+  }
+  body .content-gral .modalcont {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+  }
+  body .content-gral .modalcont .modal-content {
+    width: 70%;
+  }
+  body .content-gral .modalcont .modal-content .carrucel-content {
+    height: 100%;
+  }
+  body .content-gral .prod {
+    width: 100%;
+  }
+  body .content-gral .prod img {
+    width: 100%;
+  }
+  body .content-gral .prod p {
+    font-size: 75%;
+    padding: 30px;
+  }
+  body .content-gral .form-content {
+    width: 100%;
+  }
+  body .content-gral .form-content form {
+    width: 90%;
+  }
+  body .content-gral .form-content form .form1 {
+    width: 100%;
+  }
+  body .content-gral .posttattoo {
+    width: 100%;
+    height: auto;
+  }
+  body .content-gral .posttattoo .cuidados {
+    width: 100%;
+  }
+  body .content-gral .posttattoo .cicatrizado {
+    width: 100%;
+  }
+  body .aside-content {
+    width: unset;
+    height: unset;
+    margin: 25px;
+    flex-direction: column;
+  }
+  body .aside-content .valorar {
+    padding-top: 16px;
+  }
+  body .footer-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .footer-content .nav-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .footer-content .nav-list .menu {
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px;
+    margin: 5px 0;
+  }
+  body .footer-content .footer__content__redes {
+    flex-direction: column;
+  }
+  body .footer-content .footer__content__redes .redes-footer {
+    width: 45%;
+    margin: 24px;
+    transition: all 0.3s ease;
+  }
+  body .footer-content .footer__content__redes .redes-footer:hover {
+    width: 60%;
+    box-shadow: 4px 4px 15px #f5e612;
+  }
+  body .footer-content .logo-content .logo-footer {
+    margin: 21px;
+  }
+}
+@media (max-width: 481px) and (min-width: 320px) {
+  .grid-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "nav" "main" "aside" "footer";
+  }
+  body {
+    background-position-x: center;
+    background-repeat: unset;
+  }
+  body .cab {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    height: 100%;
+    background-image: none;
+  }
+  body .cab .img-redes {
+    margin: 30px 50px 20px 50px;
+    padding: 15px;
+  }
+  body .cab .img-redes .img-redes__box {
+    display: flex;
+    justify-content: center;
+  }
+  body .cab .img-redes .img-redes__box .redes {
+    width: 80%;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  body .cab .img-redes .img-redes__box .redes:hover {
+    width: 85%;
+    box-shadow: 4px 4px 15px #f5e612;
+  }
+  body .cab .logo1 {
+    width: 80%;
+    height: 60%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+  }
+  body .cab .logo1 .logo {
+    width: 80%;
+    margin: 0;
+  }
+  body .nav-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .nav-list .menu {
+    width: 100%;
+    height: 100%;
+    padding: 20px 5px;
+    font-size: 25px;
+    margin: 3px 0;
+  }
+  body .content-gral {
+    flex-direction: column;
+  }
+  body .content-gral .presenta {
+    justify-content: center;
+    align-items: center;
+  }
+  body .content-gral .presenta p {
+    width: 90%;
+    height: auto;
+  }
+  body .content-gral .prod {
+    width: 100%;
+  }
+  body .content-gral .prod img {
+    width: 100%;
+  }
+  body .content-gral .prod p {
+    font-size: 75%;
+    padding: 30px;
+  }
+  body .content-gral .posttattoo {
+    width: 100%;
+    height: auto;
+  }
+  body .content-gral .posttattoo .cuidados {
+    width: 100%;
+  }
+  body .content-gral .posttattoo .cicatrizado {
+    width: 100%;
+  }
+  body .content-gral .form-content {
+    width: 100%;
+    height: 1087px;
+  }
+  body .content-gral .form-content h1 {
+    font-size: 40px;
+    color: rgba(238, 238, 238, 0.8470588235);
+    margin: 50px 0;
+  }
+  body .content-gral .form-content form {
+    width: 90%;
+  }
+  body .content-gral .form-content form .form1 {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design .titledis {
+    width: 100%;
+  }
+  body .content-gral .body-carrusel-design .titledis .dis {
+    width: 100%;
+    flex-direction: column;
+  }
+  body .content-gral .modalcont {
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    width: 90%;
+  }
+  body .content-gral .modalcont .modal-content {
+    width: 90%;
+  }
+  body .content-gral .modalcont .modal-content .carousel {
+    width: 100%;
+  }
+  body .content-gral .modalcont .modal-content .carousel .carrucel-content {
+    height: 100%;
+  }
+  body .content-gral .title-tattoos {
+    width: 100%;
+  }
+  body .aside-content {
+    width: unset;
+    height: unset;
+    margin: 30px;
+    flex-direction: column;
+  }
+  body .aside-content .valorar {
+    padding-top: 16px;
+  }
+  body .footer-content {
+    justify-content: center;
+    flex-direction: column;
+  }
+  body .footer-content .footer__content__redes {
+    flex-direction: column;
+  }
+  body .footer-content .footer__content__redes .redes-footer {
+    width: 50%;
+    margin: 24px;
+    transition: all 0.3s ease;
+  }
+  body .footer-content .footer__content__redes .redes-footer:hover {
+    width: 60%;
+    box-shadow: 4px 4px 15px #f5e612;
+  }
+  body .footer-content .footer__content__redes .logo-footer {
+    margin: 21px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
