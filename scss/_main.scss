@@ -200,7 +200,7 @@
                 width: 230px;
             }
             .imgcont {
-                width: 100%;
+                width: 230px;
                 border-radius: 9px;
             }
         }
@@ -209,7 +209,7 @@
             height: 300px;
             background-color: rgba(245, 222, 179, 0);
             .imgmodal{
-                width: 100%;
+                width: 500px;
             }
             .carousel-control-prev-icon {
                 transition: all 0.3s ease;
@@ -299,6 +299,9 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
+                .imgcont {
+                    width: 230px;
+                }
             }
             #bandg{
                 background-color: #18181a9a;
@@ -310,6 +313,9 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
+                .imgcont {
+                    width: 230px;
+                }
             }
             
             #linea{
@@ -322,6 +328,9 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 align-items: center;
+                .imgcont {
+                    width: 230px;
+                }
             }
         }
     }
