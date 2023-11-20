@@ -1,45 +1,78 @@
 .cab {
     margin: auto;
-    background-color: #1b1b1d;
-    background-image: url(../assets/pagina-tatuaje.jpg);
+    background-color: $back-color;
+    background-image: $img-header;
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width: 92%;
-    border-radius: 29px;
-    border: 2px solid #afafaf36;
-    display: flex;
-    height: 286px;
-    justify-content: space-between;
+    @include w-h ($fullscreen-with-margin, 286px);
+    border-radius: $radius1;
+    @include border-mx (b-grey);
+    @include flex-just-align-dire-wrap (space-between, none, none, none);
+
+    .name-log-animation {
+        font-family: fantasy;
+        font-size: 70px;
+        color: $color-grey2;
+        position: absolute;
+        top: 15px;
+        left: 82px;
+        animation-name: name-logo;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        text-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
+    }
+
+    .name-logo-animation {
+        font-family: fantasy;
+        font-size: 70px;
+        color: $color-grey2;
+        position: absolute;
+        top: 74px;
+        left: 141px;
+        animation-name: name-logo;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        text-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
+    }
+
     .img-redes {
-        display: flex;
-        align-items: end;
+        @include flex-just-align-dire-wrap (none, end, none, none);
         margin-left: 22px;
         margin: 0 0 12px 17px;
-        .redes{
+
+        .redes {
             width: 42px;
-            border-radius: 23px;
+            border-radius: $radius1;
             margin: 5px;
-            border: 2px solid #e6ba67;
+            @include border-mx (b-yellow);
+            transition: $efect-transition;
+            position: relative;
+
+
             &:hover {
-                width: 50px;
-                box-shadow: 4px 4px 15px #f5e612;
+                scale: 2;
+                box-shadow: 4px 4px 15px $color-yellow2;
             }
         }
-      
+
     }
-}   
+}
 
 
 .logo1 {
-    display: flex;
-    align-items: center;
-    .logo{
-        width: 250px;
-        border-radius: 60%; 
-        margin-right: 41px;
-        border: 5px solid #b1b1b196;
-    }
-    
-}
+    @include flex-just-align-dire-wrap (none, center, none, none);
 
+    .logo {
+        width: 250px;
+        border-radius: $radius2;
+        margin-right: 41px;
+        @include border-mx (b-grey);
+        animation: rot-logo;
+        animation-duration: 4s;
+        animation-timing-function: steps(20);
+        animation-iteration-count: 1;
+        position: relative;
+    }
+
+}

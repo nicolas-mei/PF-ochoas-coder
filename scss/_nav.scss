@@ -1,29 +1,26 @@
 .menu__navi {
-    width: 100%;
+    width: $fullscreen;
     .nav-list {
-        display: flex;
-        justify-content: space-around;
+      @include flex-just-align-dire-wrap(space-around, none, none, none); 
         padding: 0;
         .list {
             display: flex;
             .menu{
-                background-color: #060606d4;
-                border-radius: 20px;
-                border: 2px solid #afafaf36;
+                background-image: linear-gradient(to left, $color-grey2-tr, $color-beige2-tr);
+                border-radius: $radius1;
                 font-size: 40px;
+                box-shadow: 4px 4px 10px $color-black;
                 list-style: none;
                 text-decoration: none;
-                color: #e7e7e7e3;
+                color: $color-grey3-tr;
                 cursor: pointer;
-                width: 200px;
-                height: 70px;
-                display: flex;
-                align-items: center;
-                justify-content: center;transition: all 0.4s ease;
+                @include w-h (200px, 70px);
+                @include flex-just-align-dire-wrap(center, center, none, none); 
+                transition: $efect-transition;
             }
             .menu:hover {
-                background-color: #ddddddb4;
-                color: #2b2b2be0;
+                background-color: $color-grey3-tr;
+                color: $color-grey2-tr;
             }
         }
     }

@@ -1,0 +1,106 @@
+//flex box
+
+@mixin flex-just-align-dire-wrap ($jc, $ai, $fd, $fw) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+    flex-wrap: $fw;
+}
+
+//sizes
+
+@mixin w-h ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+//content image carousel tattoo
+
+@mixin layout-content-tattoo {
+    background-color: $color-grey2-tr;
+    border-radius: $radius;
+    @include w-h ($fullscreen-with-margin, 213px);
+    overflow: auto;
+    @include flex-just-align-dire-wrap (space-around, center, none, wrap);
+}
+
+//padding and margin
+
+@mixin padd-marg ($pad, $mar) {
+    padding: $pad;
+    margin: $mar;
+}
+
+// border
+
+@mixin border-mx ($bordermx) {
+    @if $bordermx=="b-biege" {
+        border: $border-beige;
+    }
+
+    @else if $bordermx == "b-grey" {
+        border: $border-grey;
+    }
+
+    @else if $bordermx == "b-grey1" {
+        border: $border-grey1;
+    }
+
+    @else if $bordermx == "b-black" {
+        border: $border-black;
+    }
+
+    @else if $bordermx == "b-yellow" {
+        border: $border-yellow;
+    }
+
+    @else {
+        border: $border-red;
+    }
+}
+
+@keyframes rot-logo {
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }  
+    30% {
+        transform: rotate(108deg);
+    }  
+    40% {
+        transform: rotate(144deg);
+    }    
+    50%{
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes name-logo {
+    0%{
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+

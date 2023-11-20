@@ -1,0 +1,49 @@
+//colors
+
+$color-grey1-tr: #212121c5;
+$color-grey2-tr: #44444463;
+$color-grey2: #5d5d5dfe;
+$color-grey3-tr: #f0f0f0e1;
+$color-grey3: #dbdbdb;
+$color-beige1: #e6ba67;
+$color-beige2-tr: #af8a447a;
+$color-yellow1: #bdbd42;
+$color-yellow2: #f5e612;
+$color-black: #000000;
+$color-black-tr: #050505d4;
+$color-blue-tr: #a09ef0be;
+$color-white: #f5f5f5;
+$color-turquoise: #0cc4b828;
+$color-red: #972626;
+$color-red-tr: #97262652;
+$back-color: #19191b;
+
+//sizes
+
+$fullscreen: 100%;
+$fullscreen-with-margin: 90%;
+$medium: 50%;
+
+//border
+
+$radius: 10px;
+$radius1: 20px;
+$radius2: 60%;
+
+//transition
+
+$efect-transition: scale 0.4s ease;
+
+// background - image
+
+$img-body: url(../assets/fondo-page.png);
+$img-header: url(../assets/pagina-tatuaje.jpg);
+
+// border vars
+
+$border-beige: 2px solid $color-beige2-tr;
+$border-grey: 2px solid $color-grey2-tr;
+$border-grey1: 3px solid $color-grey3-tr;
+$border-black: 1px solid $color-black;
+$border-yellow: 2px solid $color-yellow1;
+$border-red: 2px solid $color-red-tr;

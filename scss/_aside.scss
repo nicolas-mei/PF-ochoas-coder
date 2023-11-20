@@ -1,27 +1,22 @@
 .aside-content{
-    background-color: #18181ac5;
-    border-radius: 12px;
-    width: 213px;
-    height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-   
+    background-color: $color-grey2-tr;
+    border-radius: $radius;
+    @include w-h ($fullscreen-with-margin, 1000px);
+    @include flex-just-align-dire-wrap (space-evenly, center, column, none);
     margin-top: 50px;
-    border: 3px solid #4f4f4fd1;
+     @include border-mx (b-grey);
 }
+
+//valuation stars
 .valorar {
-    display: flex;
-    flex-direction: column;
+    @include flex-just-align-dire-wrap (none, none, column, none);
 }
 div.valoracion {
     overflow: hidden;
     display: inline-block;
-    padding: 0 35px 0 0;
-    border: 3px solid #cdb48640;
-    border-radius: 10px;
-    margin: 0 0 20px 0;
+    @include padd-marg (0 35px 0 0, 0 0 20px 0);
+    @include border-mx (b-biege);
+    border-radius: $radius;
 }
   div.valoracion input {
     position: absolute;
@@ -30,7 +25,7 @@ div.valoracion {
   
   div.valoracion label {
     float: right;
-    color: #333;
+    color: $color-grey2;
     width: 23px;
     font-size: 25px;
     cursor: pointer;
@@ -39,43 +34,38 @@ div.valoracion {
   div.valoracion label:hover,
   div.valoracion label:hover ~ label,
   div.valoracion input:checked ~ label {
-    color: #bdbd42;
+    color: $color-yellow2;
 }
 .valora{
-    background-color: #e6b9673d;
-    border-radius: 12px;
-    color: aliceblue;
+    background-color: $color-beige2-tr;
+    border-radius: $radius;
+    color: $color-grey3;
     font-size: 21px;
-    width: 175px;
-    height: auto;
-    justify-content: center;
+    @include w-h (175px, auto);
+    @include flex-just-align-dire-wrap (center, none, none, none);
     padding: 11px;
-    display: flex;
-    border: 3px solid #cdb48640; 
+    @include border-mx (b-biege);
 }
+
 .indicaciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-just-align-dire-wrap (none, center, column, none);
 }
 .indicaciones p{
     font-size: 29px;
     text-align-last: center;
-    color: #972626;
+    color: $color-red;
     text-decoration: underline;
-    display: flex;
-    align-items: center;
+    @include flex-just-align-dire-wrap (none, center, none, none);
     margin: 14px;
 }
 .items-tat li{
-    border: 2px solid #97262652;
-    border-radius: 10px;
+    @include border-mx (border-red);
+    border-radius: $radius;
     font-size: 18px;
     text-align: left;
-    color: #972626;
+    color: $color-red;
     list-style: none;
-    padding: 12px;
-    margin: 12px;
+    @include padd-marg (12px, 12px);
 }
 .img-elec p{
     font-size: 18px;
@@ -83,8 +73,5 @@ div.valoracion {
     color: #d6d6d6;
 }
 .img-elec {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include flex-just-align-dire-wrap (center, center, column, none);
 }

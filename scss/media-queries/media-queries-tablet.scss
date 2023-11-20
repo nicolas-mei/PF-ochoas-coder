@@ -1,0 +1,311 @@
+@media (max-width: 1200px) and (min-width: 1019px) {
+    body {
+        background-color: #1d1d1d;
+        .cab {
+            .name-log-animation {
+                font-size: 60px;
+            }
+
+            .name-logo-animation {
+                font-size: 60px;
+            }
+        }
+    }
+}
+
+//MEDIA QUERIES - TABLET
+
+@media (max-width: 1020px) and (min-width: 769px) {
+
+    body {
+        background-color: #1d1d1d;
+
+        .grid-content {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "aside"
+                "footer";
+        }
+
+        //HEADER 
+
+        .cab {
+            .name-log-animation {
+                font-size: 30px;
+                top: 13px;
+            }
+
+            .name-logo-animation {
+                font-size: 30px;
+                top: 64px;
+                left: 100px;
+            }
+        }
+
+        .name-log-animation {
+            font-size: 50px;
+        }
+
+        .name-logo-animation {
+            font-size: 50px;
+        }
+
+        //BARRA DE NAVEGACION
+
+        .menu__navi .nav-list .list .menu {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            font-size: 30px;
+        }
+
+        // MAIN
+
+        main .posttattoo {
+            width: 100%;
+            height: auto;
+
+            .posttattoo1 {
+                .cuidados {
+                    width: 100%;
+                }
+
+                .cicatrizado {
+                    width: 100%;
+                }
+            }
+        }
+
+        //ASIDE
+
+        .aside-content {
+            width: unset;
+            height: unset;
+            margin: 30px;
+            flex-direction: row;
+        }
+
+        //FOOTER
+
+        .footer-content .footer__nav__menu .nav-list .list .menu {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            font-size: 30px;
+        }
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 480px) {
+
+
+    body {
+        background-position-x: center;
+        background-repeat: unset;
+
+        .grid-content {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "aside"
+                "footer";
+        }
+
+        //HEADER
+
+        .cab {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            flex-direction: column-reverse;
+            height: 100%;
+            background-image: none;
+
+            .name-log-animation {
+                display: none;
+            }
+
+            .name-logo-animation {
+                display: none;
+            }
+
+            .img-redes {
+                margin: 30px 50px 20px 50px;
+                padding: 15px;
+
+                .img-redes__box {
+                    display: flex;
+                    justify-content: center;
+
+                    .redes {
+                        width: 80%;
+                        border-radius: $radius2;
+                        transition: all 0.3s ease;
+
+                        &:hover {
+                            scale: 1.2;
+                            box-shadow: 4px 4px 15px #f5e612;
+                        }
+                    }
+                }
+            }
+
+            .logo1 {
+                width: 80%;
+                height: 60%;
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+
+                .logo {
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+        }
+
+        //BARRA DE NAVEGACION
+
+        .menu__navi .nav-list {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+            flex-direction: column;
+
+            .list .menu {
+                width: 100%;
+                height: 100%;
+                padding: 20px 5px;
+                margin: 5px 0;
+            }
+        }
+
+
+
+        // MAIN
+
+        .content-gral {
+            flex-direction: column;
+
+            .presenta {
+                justify-content: center;
+                align-items: center;
+
+                .presentacion {
+                    width: 90%;
+                    height: auto;
+                }
+            }
+
+            .prod {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                p {
+                    font-size: 75%;
+                    padding: 30px;
+                }
+            }
+
+            .form-content {
+                width: 100%;
+
+                form {
+                    width: 90%;
+
+                    .form1 {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            .posttattoo {
+                width: 100%;
+                height: auto;
+
+                .posttattoo1 .cuidados {
+                    width: 100%;
+                }
+
+                .posttattoo1 .cicatrizado {
+                    width: 100%;
+                }
+            }
+        }
+
+        //ASIDE
+
+        .aside-content {
+            width: unset;
+            height: unset;
+            margin: 25px;
+            flex-direction: column;
+
+            .valorar {
+                padding-top: 16px;
+            }
+        }
+
+        //FOOTER
+
+        .footer-content {
+            justify-content: center;
+            flex-direction: column;
+
+            .footer__nav__menu .nav-list {
+                width: 100%;
+                flex-direction: column;
+
+                .list .menu {
+                    width: 100%;
+                    height: 100%;
+                    padding: 20px 5px;
+                    margin: 5px 0;
+                }
+            }
+
+            .footer__content__redes {
+                flex-direction: column;
+
+                .footer-cont {
+                    margin: 0;
+
+                    .img-redes__box {
+                        display: flex;
+                        justify-content: center;
+
+                        .redes-footer {
+                            width: 70%;
+                            margin: 10px;
+                            transition: all 0.3s ease;
+
+                            &:hover {
+                                scale: 1.2;
+                                box-shadow: 4px 4px 15px #f5e612;
+                            }
+
+                        }
+                    }
+                }
+
+                .logo_content .logo-footer {
+                    margin: 27px;
+                }
+            }
+
+
+        }
+    }
+}

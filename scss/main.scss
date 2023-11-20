@@ -1,8 +1,10 @@
 //reset
+
 @import "./reset/reset.scss" ;
-@import "./reset/vars" ;
 @import "./reset/mixin" ;
+@import "./reset/vars" ;
 @import "./reset/grid.scss" ;
+
 
 
 //layout
@@ -15,4 +17,7 @@
 
 
 //Media Queries
-@import "./reset/mq";
+@import "./media-queries/media-queries-mobile.scss";
+@import "./media-queries/media-queries-tablet.scss";
+@import "./media-queries/carousel/mq-carousel-mobile.scss";
+@import "./media-queries/carousel/mq-carousel-tablet.scss";

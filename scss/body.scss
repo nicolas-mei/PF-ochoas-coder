@@ -1,6 +1,7 @@
 body{
-    background-color: #1b1b1f;
-    background-image: url(../assets/fondo-page.png);
+    background-color: $back-color;
+    background-image: $img-body;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-size: cover;
 }

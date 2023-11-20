@@ -1,347 +1,343 @@
 .content-gral {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    main button{
+    @include flex-just-align-dire-wrap(space-around, center, row, none);
+
+    main button {
         bottom: unset;
         cursor: pointer;
     }
+//
     .presenta {
-        display: flex;
-        flex-direction: column;
+        @include flex-just-align-dire-wrap(none, none, column, none);
         margin: 20px;
-        height: 100%;
-        h1{
-            border: 2px solid #9d78327a;
-            background-color: #91743e70;
+        height: $fullscreen;
+
+        h1 {
+            @include border-mx (b-grey);
+            background-image: linear-gradient(to top, $color-grey2-tr,  $color-beige2-tr);
             width: 204px;
-            border-radius: 9px;
+            border-radius: $radius;
             font-size: 37px;
             text-align: center;
-            padding: 12px;
-            color: #dbdbdbe8;
+            @include padd-marg (12px, 30px 0);
+            color: $color-grey3-tr;
             cursor: auto;
-            margin: 30px 0;
+            box-shadow: 4px 4px 10px $color-black;
         }
-        .presentacion{
-            background-color: #e6b9674d;
-            border-radius: 13px;
-            color: #dbdbdbe5;
+
+        .presentacion {
+            background-image: linear-gradient(to top, $color-grey2-tr,  $color-beige2-tr);
+            border-radius: $radius;
+            color: $color-grey3-tr;
+            box-shadow: 4px 4px 10px $color-black;
             font-size: 21px;
-            margin: 0px;
-            padding: 15px;
-            width: 202px;
-            height: 100%;
+            @include padd-marg (15px, 0);
+            @include w-h (202px, $fullscreen);
         }
     }
+
     .carousel {
-        width: 66%;
-        .carousel-item a img {
-            width: 100%;
-            .carousel-caption h5 {
-                font-size: 40px;
-                background-color: #d1d1d156;
-                border: 2px solid #4646466c;   
+        @include w-h ($fullscreen, $fullscreen);
+
+        .carousel-inner {
+            @include w-h ($fullscreen, $fullscreen);
+            padding: 30px;
+            
+        }
+        .carousel-item {
+            height: $fullscreen;
+            a img {
+                @include w-h ($fullscreen, $fullscreen);
+                border-radius: $radius1;
+                    box-shadow: 4px 4px 15px $color-black;
+    
+    
             }
         }
+
+        
+
+        .carousel-caption h5 {
+            font-size: 40px;
+            background-color: $color-grey2-tr;
+            @include border-mx (b-grey);
+            border-radius: $radius1;
+        }
+
         .carousel-control-prev-icon {
-            transition: all 0.3s ease;
-            background-color: #737373bd;
+            transition: $efect-transition;
+            background-color: $color-grey2-tr;
             padding: 23px;
-            border-radius: 10px;
-            border-radius: 12px;
+            border-radius: $radius;
+
             &:hover {
-                background-color: #8b92d3bd;
-                padding: 26px;
-        }
-        .carousel-control-next-icon {
-            transition: all 0.3s ease;
-            background-color: #737373bd;
-            padding: 23px;
-            border-radius: 10px;
-            &:hover {
-                background-color: #8b92d3bd;
+                background-color: $color-blue-tr;
                 padding: 26px;
             }
+
+
         }
+
+        .carousel-control-next-icon {
+            transition: $efect-transition;
+            background-color: $color-grey2-tr;
+            padding: 23px;
+            border-radius: $radius;
+
+            &:hover {
+                background-color: $color-blue-tr;
+                padding: 26px;
+            }
         }
     }
+
     .form-content {
-        background-color: #4b4b4b65;
-        border-radius: 20px;
-        border: 3px solid #bdbdbd7c;
-        width: 800px;
-        height: 1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        box-shadow: 4px 5px 15px #e9e9e9e5;
+        background-color: $color-grey2-tr;
+        border-radius: $radius1;
+        @include border-mx (b-grey1);
+        @include w-h ($fullscreen-with-margin, 1000px);
+        @include flex-just-align-dire-wrap (center, center, column, none);
+        box-shadow: 4px 5px 15px $color-grey3-tr;
+
         h1 {
             font-size: 50px;
-            color: #eeeeeed8;
+            color: $color-grey3-tr;
             margin: 50px 0;
         }
+
         .form1 {
             width: 500px;
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
+            @include flex-just-align-dire-wrap (center, none, column, none);
+
             .form-items {
                 list-style: none;
                 margin: 15px 0;
+
                 .label-pal {
                     font-size: 30px;
-                    color: #ecececd7;
-                    display: flex;
-                    justify-content: flex-start;
+                    color: $color-grey3-tr;
+                    @include flex-just-align-dire-wrap (flex-start, none, none, none);
                 }
+
                 .imput-content {
-                    width: 100%;
-                    background-color: #4e4e4ea2;
-                    border-radius: 8px;
-                    border: 2px solid hwb(0 38% 62% / 0.733);
+                    width: $fullscreen;
+                    background-color: $color-grey2-tr;
+                    border-radius: $radius;
+                    @include border-mx (b-grey);
                     font-size: 18px;
-                    color: #e7e7e7c4;
+                    color: $color-grey3-tr;
                     padding: 20px;
-                    box-shadow: 2px 2px 7px #f5f5f5;
+                    box-shadow: 2px 2px 7px $color-white;
                     display: flex;
                 }
             }
+
             .btnform {
                 float: left;
                 width: 129px;
                 font-size: 20px;
-                background-color: #dfcaa4b8;
-                color: #272727;
+                background-color: $color-beige2-tr;
+                color: $color-grey3;
                 margin: 20px 0;
-                border-radius: 12px;
+                border-radius: $radius;
                 cursor: pointer;
-                &:hover{
-                    background-color: #616161c4;
-                    color: #dfcaa4b8;
+                transition: $efect-transition;
+
+                &:hover {
+                    background-color: $color-grey2-tr;
+                    color: $color-beige2-tr;
                 }
             }
-            
+
         }
     }
-    .posttattoo{
-        background-color: #18181a77;
-        border-radius: 10px;
-        width: 900px;
-        height: 1000px;
-        padding: 10px 30px 30px 30px;
-        margin: 0 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .posttattoo1{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            .cuidados{
-                background-color: #e6b9674d;
-                border-radius: 10px;
+
+    .posttattoo {
+        background-color: $color-grey2-tr;
+        border-radius: $radius;
+        @include w-h ($fullscreen-with-margin, 1000px);
+        @include padd-marg (10px 30px 30px 30px, 0 30px);
+        @include flex-just-align-dire-wrap (center, center, column, none);
+
+        .posttattoo1 {
+            @include flex-just-align-dire-wrap (center, center, column, none);
+
+            .cuidados {
+                background-color: $color-beige2-tr;
+                border-radius: $radius;
                 font-size: 40px;
                 text-decoration: underline;
-                color: #a7a7a7;
+                color: $color-grey3;
                 text-align: center;
-                width: 400px; 
+                width: $fullscreen-with-margin;
                 margin-bottom: 45px;
             }
-            .cicatrizado{
-                background-color: #e6b9674d;
-                border-radius: 10px;
+
+            .cicatrizado {
+                background-color: $color-beige2-tr;
+                border-radius: $radius;
                 text-decoration: none;
                 font-size: 30px;
-                color: #a7a7a7;
+                color: $color-grey3;
                 text-align: center;
-                width: 700px;
-                margin: 20px;
-                padding: 15px;
+                width: $fullscreen-with-margin;
+                @include padd-marg (15px, 20px);
             }
-            .text{
+
+            .text {
                 font-size: 17px;
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                color: #d6d6d6;
+                color: $color-grey3;
             }
         }
     }
+
     .body-carrusel-design {
-        width: 800px;
-        height: 1000px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .titledis{
-            background-color: #e6b9674d;
-            border-radius: 10px;
-            border: 1px #000000;
+        @include w-h (800px, 1000px);
+        @include flex-just-align-dire-wrap (center, center, column, none);
+
+        .titledis {
+            background-color: $color-beige2-tr;
+            border-radius: $radius;
+            @include border-mx (b-black);
             text-align: center;
             font-size: 40px;
             text-decoration: none;
             width: 500px;
-            padding: 10px;
-            margin-bottom: 50px;
+            @include padd-marg (10px, 0 0 50px 0);
         }
+
         .dis {
-            width: 800px;
-            height: 800px;
+            @include w-h ($fullscreen-with-margin, 800px);
             overflow: auto;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
+            @include flex-just-align-dire-wrap (space-around, center, none, wrap);
+
             .btn1 {
                 width: 230px;
             }
+
             .imgcont {
                 width: 230px;
-                border-radius: 9px;
+                padding: 10px;
+                border-radius: $radius1;
+                box-shadow: 4px 4px 15px $color-black;
             }
         }
-        .modal-content{
-            width: 500px;
-            height: 300px;
+
+        .modal-content {
+            @include w-h ($fullscreen, $fullscreen);
             background-color: rgba(245, 222, 179, 0);
-            .imgmodal{
-                width: 500px;
+
+            .imgmodal {
+                @include w-h ($fullscreen, $fullscreen);
             }
+
             .carousel-control-prev-icon {
-                transition: all 0.3s ease;
-                background-color: rgba(115, 115, 115, 0.7411764706);
+                transition: $efect-transition;
+                background-color: $color-grey2-tr;
                 padding: 23px;
-                border-radius: 10px;
-                border-radius: 12px;
+                border-radius: $radius;
+
                 &:hover {
-                    background-color: rgba(139, 146, 211, 0.7411764706);
+                    background-color: $color-blue-tr;
                     padding: 26px;
-                  }
-              }
-              .carousel-control-next-icon {
-                transition: all 0.3s ease;
-                background-color: rgba(115, 115, 115, 0.7411764706);
+                }
+            }
+
+            .carousel-control-next-icon {
+                transition: $efect-transition;
+                background-color: $color-grey2-tr;
                 padding: 23px;
-                border-radius: 10px;
+                border-radius: $radius;
+
                 &:hover {
-                    background-color: rgba(139, 146, 211, 0.7411764706);
+                    background-color: $color-blue-tr;
                     padding: 26px;
-                  }
-              }
-             
-              
-             
+                }
+            }
+
+
+
         }
     }
-    .prod{
-        background-color: #0cc4b828;
-        border-radius: 10px;
+
+    .prod {
+        background-color: $color-turquoise;
+        border-radius: $radius;
         text-decoration: underline;
         font-size: 47px;
-        color: #e7e7e7;
-        width: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        color: $color-grey3;
+        width: $fullscreen-with-margin;
+        @include flex-just-align-dire-wrap (center, center, column, none);
+
         img {
             width: 700px;
         }
+
         p {
             font-size: 29px;
             padding: 50px;
             text-decoration: none;
         }
     }
+
     .tattoos {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        .realizados{
-            background-color: #e6b9674d;
-            border-radius: 10px;
-            border: 1px #000000;
+        @include flex-just-align-dire-wrap (center, center, column, none);
+
+        .realizados {
+            background-color: $color-beige2-tr;
+            border-radius: $radius;
+            @include border-mx (b-black);
             font-size: 55px;
             text-decoration: none;
-            width: 90%;
+            width: $fullscreen-with-margin;
             text-align: center;
             padding: 5px;
         }
+
         .content-tattoos {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            @include flex-just-align-dire-wrap (center, center, column, none);
             padding: 15px;
-            .title-tattoos{
-                background-color: #e6b9674d;
-                border-radius: 10px;
-                border: 1px #000000;
+
+            .title-tattoos {
+                background-color: $color-beige2-tr;
+                border-radius: $radius;
+                @include border-mx (b-black);
                 text-align: center;
                 font-size: 40px;
                 text-decoration: none;
                 width: 700px;
-                padding: 5px;
-                margin: 10px;
+                @include padd-marg (5px, 10px);
             }
-            #color{
-                background-color: #18181a9a;
-                border-radius: 10px;
-                width: 90%;
-                height: 213px;
-                overflow: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
+
+            #color {
+                @include layout-content-tattoo;
+
                 .imgcont {
                     width: 230px;
+                    border-radius: $radius1;
+                    box-shadow: 4px 4px 15px $color-black;
                 }
             }
-            #bandg{
-                background-color: #18181a9a;
-                border-radius: 10px;
-                width: 90%;
-                height: 213px;
-                overflow: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
+
+            #bandg {
+                @include layout-content-tattoo;
+
                 .imgcont {
                     width: 230px;
+                    border-radius: $radius1;
+                    box-shadow: 4px 4px 15px $color-black;
                 }
             }
-            
-            #linea{
-                background-color: #18181a9a;
-                border-radius: 10px;
-                width: 90%;
-                height: 213px;
-                overflow: auto;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-                align-items: center;
+
+            #linea {
+                @include layout-content-tattoo;
+
                 .imgcont {
                     width: 230px;
+                    border-radius: $radius1;
+                    box-shadow: 4px 4px 15px $color-black;
                 }
             }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
