@@ -1,6 +1,6 @@
 .footer-content {
     background-color: $color-grey2-tr;
-    @include w-h ($fullscreen, $fullscreen);
+    @include w-h ( get-map($size-general, full), get-map($size-general, full));
     border-radius: $radius;
     margin-bottom: 20px;
     @include flex-just-align-dire-wrap (space-between, center, column, none);
@@ -10,7 +10,7 @@
         width: $fullscreen;
 
         iframe {
-            @include w-h ($fullscreen-with-margin, 200px);
+            @include w-h ( get-map($size-general, full-with-margin), 200px);
             border-radius: $radius;
             margin: 40px 0;
         }
@@ -22,7 +22,7 @@
 
     .footer__content__redes {
         @include flex-just-align-dire-wrap (space-between, center, none, none);
-        width: $fullscreen;
+        width:  get-map($size-general, full);
 
         .footer-cont {
             display: flex;
@@ -60,7 +60,7 @@
     }
 
     .footer__nav__menu {
-        width: $fullscreen;
+        width: get-map($size-general, full);
 
         .nav-list {
             @include flex-just-align-dire-wrap (space-around, none, none, none);

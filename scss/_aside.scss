@@ -1,7 +1,7 @@
 .aside-content{
     background-color: $color-grey2-tr;
     border-radius: $radius;
-    @include w-h ($fullscreen-with-margin, 1000px);
+    @include w-h ( get-map($size-general, full-with-margin), 1000px);
     @include flex-just-align-dire-wrap (space-evenly, center, column, none);
     margin-top: 50px;
      @include border-mx (b-grey);

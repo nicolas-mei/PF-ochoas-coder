@@ -20,9 +20,11 @@ $back-color: #19191b;
 
 //sizes
 
-$fullscreen: 100%;
-$fullscreen-with-margin: 90%;
-$medium: 50%;
+$size-general:(
+    full: 100%,
+    full-with-margin: 90%,
+    medium: 50%
+);
 
 //border
 
