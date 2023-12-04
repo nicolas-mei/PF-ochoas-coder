@@ -5,7 +5,7 @@
     background-position-x: center;
     background-repeat: no-repeat;
     background-size: contain;
-    @include w-h ( get-map($size-general, full-with-margin), 286px);
+    @include w-h ($full-with-margin, 286px);
     border-radius: $radius1;
     @include border-mx (b-grey);
     @include flex-just-align-dire-wrap (space-between, none, none, none);

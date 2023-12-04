@@ -1,5 +1,5 @@
 .menu__navi {
-    width: get-map($size-general, full);
+    width: $full;
     .nav-list {
       @include flex-just-align-dire-wrap(space-around, none, none, none); 
         padding: 0;

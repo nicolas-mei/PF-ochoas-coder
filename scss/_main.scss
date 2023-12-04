@@ -9,7 +9,7 @@
     .presenta {
         @include flex-just-align-dire-wrap(none, none, column, none);
         margin: 20px;
-        height:  get-map($size-general, full);
+        height: $full;
 
         h1 {
             @include border-mx (b-grey);
@@ -31,22 +31,22 @@
             box-shadow: 4px 4px 10px $color-black;
             font-size: 21px;
             @include padd-marg (15px, 0);
-            @include w-h (202px, get-map($size-general, full));
+            @include w-h (202px, $full);
         }
     }
 
     .carousel {
-        @include w-h ( get-map($size-general, full),  get-map($size-general, full));
+        @include w-h ($full, $full);
 
         .carousel-inner {
-            @include w-h ( get-map($size-general, full), get-map($size-general, full));
+            @include w-h ($full, $full);
             padding: 30px;
             
         }
         .carousel-item {
-            height:  get-map($size-general, full);
+            height: $full;
             a img {
-                @include w-h ( get-map($size-general, full),  get-map($size-general, full));
+                @include w-h ($full, $full);
                 border-radius: $radius1;
                     box-shadow: 4px 4px 15px $color-black;
     
@@ -94,7 +94,7 @@
         background-color: $color-grey2-tr;
         border-radius: $radius1;
         @include border-mx (b-grey1);
-        @include w-h ( get-map($size-general, full-with-margin), 1000px);
+        @include w-h ($full-with-margin, 1000px);
         @include flex-just-align-dire-wrap (center, center, column, none);
         box-shadow: 4px 5px 15px $color-grey3-tr;
 
@@ -119,7 +119,7 @@
                 }
 
                 .imput-content {
-                    width:  get-map($size-general, full);
+                    width: $full;
                     background-color: $color-grey2-tr;
                     border-radius: $radius;
                     @include border-mx (b-grey);
@@ -154,7 +154,7 @@
     .posttattoo {
         background-color: $color-grey2-tr;
         border-radius: $radius;
-        @include w-h ( get-map($size-general, full-with-margin), 1000px);
+        @include w-h ($full-with-margin, 1000px);
         @include padd-marg (10px 30px 30px 30px, 0 30px);
         @include flex-just-align-dire-wrap (center, center, column, none);
 
@@ -168,7 +168,7 @@
                 text-decoration: underline;
                 color: $color-grey3;
                 text-align: center;
-                width: get-map($size-general, full-with-margin);
+                width: $full-with-margin;
                 margin-bottom: 45px;
             }
 
@@ -179,7 +179,7 @@
                 font-size: 30px;
                 color: $color-grey3;
                 text-align: center;
-                width: get-map($size-general, full-with-margin);
+                width: $full-with-margin;
                 @include padd-marg (15px, 20px);
             }
 
@@ -207,7 +207,7 @@
         }
 
         .dis {
-            @include w-h ( get-map($size-general, full-with-margin), 800px);
+            @include w-h ($full-with-margin, 800px);
             overflow: auto;
             @include flex-just-align-dire-wrap (space-around, center, none, wrap);
 
@@ -224,11 +224,11 @@
         }
 
         .modal-content {
-            @include w-h ( get-map($size-general, full), get-map($size-general, full));
+            @include w-h ($full, $full);
             background-color: rgba(245, 222, 179, 0);
 
             .imgmodal {
-                @include w-h ( get-map($size-general, full),  get-map($size-general, full));
+                @include w-h ($full, $full);
             }
 
             .carousel-control-prev-icon {
@@ -266,7 +266,7 @@
         text-decoration: underline;
         font-size: 47px;
         color: $color-grey3;
-        width: get-map($size-general, full-with-margin);
+        width: $full-with-margin;
         @include flex-just-align-dire-wrap (center, center, column, none);
 
         img {
@@ -289,7 +289,7 @@
             @include border-mx (b-black);
             font-size: 55px;
             text-decoration: none;
-            width:  get-map($size-general, full-with-margin);
+            width: $full-with-margin;
             text-align: center;
             padding: 5px;
         }

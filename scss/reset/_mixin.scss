@@ -20,7 +20,7 @@
 @mixin layout-content-tattoo {
     background-color: $color-grey2-tr;
     border-radius: $radius;
-    @include w-h ($fullscreen-with-margin, 213px);
+    @include w-h ($full-with-margin, 213px);
     overflow: auto;
     @include flex-just-align-dire-wrap (space-around, center, none, wrap);
 }
