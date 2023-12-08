@@ -56,7 +56,7 @@
 
         
 
-        .carousel-caption h5 {
+        .carousel-caption .mods {
             font-size: 40px;
             background-color: $color-grey2-tr;
             @include border-mx (b-grey);
@@ -90,63 +90,70 @@
         }
     }
 
-    .form-content {
+    .form-content1 {
         background-color: $color-grey2-tr;
         border-radius: $radius1;
         @include border-mx (b-grey1);
-        @include w-h ($full-with-margin, 1000px);
+        @include w-h ($full-with-margin, $full);
         @include flex-just-align-dire-wrap (center, center, column, none);
         box-shadow: 4px 5px 15px $color-grey3-tr;
-
         h1 {
             font-size: 50px;
             color: $color-grey3-tr;
             margin: 50px 0;
+            text-align: center;
         }
 
-        .form1 {
-            width: 500px;
-            @include flex-just-align-dire-wrap (center, none, column, none);
-
-            .form-items {
-                list-style: none;
-                margin: 15px 0;
-
-                .label-pal {
-                    font-size: 30px;
-                    color: $color-grey3-tr;
-                    @include flex-just-align-dire-wrap (flex-start, none, none, none);
+        form{
+            width: $full-with-margin;
+            .form1 {
+                width: 90%;
+                padding: 0;
+                @include flex-just-align-dire-wrap (center, none, column, none);
+    
+                .form-items {
+                    list-style: none;
+                    margin: 15px 0;
+    
+                    .label-pal {
+                        font-size: 30px;
+                        color: $color-grey3-tr;
+                        @include flex-just-align-dire-wrap (flex-start, none, none, none);
+                    }
+    
+                    .imput-content {
+                        width: $full;
+                        background-color: $color-grey2-tr;
+                        border-radius: $radius;
+                        @include border-mx (b-grey);
+                        font-size: 18px;
+                        color: $color-grey3-tr;
+                        padding: 20px;
+                        box-shadow: 2px 2px 7px $color-white;
+                        display: flex;
+                    }
                 }
-
-                .imput-content {
-                    width: $full;
-                    background-color: $color-grey2-tr;
+    
+                .btnform {
+                    float: left;
+                    width: 129px;
+                    font-size: 20px;
+                    background-color: $color-beige2-tr;
+                    color: $color-grey3;
+                    margin: 20px 0;
                     border-radius: $radius;
-                    @include border-mx (b-grey);
-                    font-size: 18px;
-                    color: $color-grey3-tr;
-                    padding: 20px;
-                    box-shadow: 2px 2px 7px $color-white;
-                    display: flex;
+                    cursor: pointer;
+                    transition: $efect-transition;
+    
+                    &:hover {
+                        background-color: $color-grey2-tr;
+                        color: $color-beige2-tr;
+                    }
                 }
-            }
+        }
 
-            .btnform {
-                float: left;
-                width: 129px;
-                font-size: 20px;
-                background-color: $color-beige2-tr;
-                color: $color-grey3;
-                margin: 20px 0;
-                border-radius: $radius;
-                cursor: pointer;
-                transition: $efect-transition;
-
-                &:hover {
-                    background-color: $color-grey2-tr;
-                    color: $color-beige2-tr;
-                }
-            }
+       
+        
 
         }
     }
@@ -210,6 +217,9 @@
             @include w-h ($full-with-margin, 800px);
             overflow: auto;
             @include flex-just-align-dire-wrap (space-around, center, none, wrap);
+            animation-name: animation-prod;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
 
             .btn1 {
                 width: 230px;
@@ -271,6 +281,9 @@
 
         img {
             width: 700px;
+            animation-name: animation-prod;
+            animation-duration: 4s;
+            animation-timing-function: ease-out;
         }
 
         p {

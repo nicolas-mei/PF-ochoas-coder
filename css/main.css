@@ -7,34 +7,39 @@
 
 @keyframes rot-logo {
   10% {
-    transform: rotate(36deg);
+    scale: 1.1;
+    box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
   }
   20% {
-    transform: rotate(72deg);
+    scale: 1;
   }
   30% {
-    transform: rotate(108deg);
+    scale: 1.1;
+    box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
   }
   40% {
-    transform: rotate(144deg);
+    scale: 1;
   }
   50% {
-    transform: rotate(180deg);
+    scale: 1.1;
+    box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
   }
   60% {
-    transform: rotate(216deg);
+    scale: 1;
   }
   70% {
-    transform: rotate(252deg);
+    scale: 1.1;
+    box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
   }
   80% {
-    transform: rotate(288deg);
+    scale: 1;
   }
   90% {
-    transform: rotate(324deg);
+    scale: 1.1;
+    box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
   }
   100% {
-    transform: rotate(360deg);
+    scale: 1;
   }
 }
 @keyframes name-logo {
@@ -48,20 +53,31 @@
     opacity: 0;
   }
 }
+@keyframes animation-prod {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .grid-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 300px 100px 1100px 600px;
-  grid-template-areas: "header header header header" "nav    nav    nav    nav" "main   main   main   aside" "footer footer footer footer";
+  grid-template-rows: 100px 300px 1100px 600px;
+  grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   aside" "footer footer footer footer";
   row-gap: 20px;
+}
+
+.navbar {
+  grid-area: nav;
 }
 
 .cab {
   grid-area: header;
-}
-
-.menu__navi {
-  grid-area: nav;
 }
 
 .content-gral {
@@ -106,8 +122,8 @@ body {
   font-size: 70px;
   color: rgba(93, 93, 93, 0.9960784314);
   position: absolute;
-  top: 15px;
-  left: 82px;
+  top: 143px;
+  left: 113px;
   animation-name: name-logo;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -118,8 +134,8 @@ body {
   font-size: 70px;
   color: rgba(93, 93, 93, 0.9960784314);
   position: absolute;
-  top: 74px;
-  left: 141px;
+  top: 231px;
+  left: 175px;
   animation-name: name-logo;
   animation-duration: 5s;
   animation-fill-mode: forwards;
@@ -160,8 +176,8 @@ body {
   margin-right: 41px;
   border: 2px solid rgba(68, 68, 68, 0.3882352941);
   animation: rot-logo;
-  animation-duration: 4s;
-  animation-timing-function: steps(20);
+  animation-duration: 5s;
+  animation-timing-function: ease;
   animation-iteration-count: 1;
   position: relative;
 }
@@ -228,7 +244,7 @@ body {
   border-radius: 20px;
   box-shadow: 4px 4px 15px #000000;
 }
-.content-gral .carousel .carousel-caption h5 {
+.content-gral .carousel .carousel-caption .mods {
   font-size: 40px;
   background-color: rgba(68, 68, 68, 0.3882352941);
   border: 2px solid rgba(68, 68, 68, 0.3882352941);
@@ -254,12 +270,12 @@ body {
   background-color: rgba(160, 158, 240, 0.7450980392);
   padding: 26px;
 }
-.content-gral .form-content {
+.content-gral .form-content1 {
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 20px;
   border: 3px solid rgba(240, 240, 240, 0.8823529412);
   width: 90%;
-  height: 1000px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -267,24 +283,29 @@ body {
   flex-wrap: none;
   box-shadow: 4px 5px 15px rgba(240, 240, 240, 0.8823529412);
 }
-.content-gral .form-content h1 {
+.content-gral .form-content1 h1 {
   font-size: 50px;
   color: rgba(240, 240, 240, 0.8823529412);
   margin: 50px 0;
+  text-align: center;
 }
-.content-gral .form-content .form1 {
-  width: 500px;
+.content-gral .form-content1 form {
+  width: 90%;
+}
+.content-gral .form-content1 form .form1 {
+  width: 90%;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: none;
   flex-direction: column;
   flex-wrap: none;
 }
-.content-gral .form-content .form1 .form-items {
+.content-gral .form-content1 form .form1 .form-items {
   list-style: none;
   margin: 15px 0;
 }
-.content-gral .form-content .form1 .form-items .label-pal {
+.content-gral .form-content1 form .form1 .form-items .label-pal {
   font-size: 30px;
   color: rgba(240, 240, 240, 0.8823529412);
   display: flex;
@@ -293,7 +314,7 @@ body {
   flex-direction: none;
   flex-wrap: none;
 }
-.content-gral .form-content .form1 .form-items .imput-content {
+.content-gral .form-content1 form .form1 .form-items .imput-content {
   width: 100%;
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 10px;
@@ -304,7 +325,7 @@ body {
   box-shadow: 2px 2px 7px #f5f5f5;
   display: flex;
 }
-.content-gral .form-content .form1 .btnform {
+.content-gral .form-content1 form .form1 .btnform {
   float: left;
   width: 129px;
   font-size: 20px;
@@ -315,7 +336,7 @@ body {
   cursor: pointer;
   transition: scale 0.4s ease;
 }
-.content-gral .form-content .form1 .btnform:hover {
+.content-gral .form-content1 form .form1 .btnform:hover {
   background-color: rgba(68, 68, 68, 0.3882352941);
   color: rgba(175, 138, 68, 0.4784313725);
 }
@@ -394,6 +415,9 @@ body {
   align-items: center;
   flex-direction: none;
   flex-wrap: wrap;
+  animation-name: animation-prod;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 .content-gral .body-carrusel-design .dis .btn1 {
   width: 230px;
@@ -448,6 +472,9 @@ body {
 }
 .content-gral .prod img {
   width: 700px;
+  animation-name: animation-prod;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
 }
 .content-gral .prod p {
   font-size: 29px;
@@ -494,13 +521,16 @@ body {
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 10px;
   width: 90%;
-  height: 213px;
+  height: 220px;
   overflow: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: none;
   flex-wrap: wrap;
+  animation-name: animation-prod;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
 }
 .content-gral .tattoos .content-tattoos #color .imgcont {
   width: 230px;
@@ -511,13 +541,16 @@ body {
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 10px;
   width: 90%;
-  height: 213px;
+  height: 220px;
   overflow: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: none;
   flex-wrap: wrap;
+  animation-name: animation-prod;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
 }
 .content-gral .tattoos .content-tattoos #bandg .imgcont {
   width: 230px;
@@ -528,13 +561,16 @@ body {
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 10px;
   width: 90%;
-  height: 213px;
+  height: 220px;
   overflow: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: none;
   flex-wrap: wrap;
+  animation-name: animation-prod;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
 }
 .content-gral .tattoos .content-tattoos #linea .imgcont {
   width: 230px;
@@ -618,8 +654,8 @@ div.valoracion input:checked ~ label {
 
 .indicaciones p {
   font-size: 29px;
-  text-align-last: center;
-  color: #972626;
+  text-align: center;
+  color: #f5f5f5;
   text-decoration: underline;
   display: flex;
   justify-content: none;
@@ -629,12 +665,15 @@ div.valoracion input:checked ~ label {
   margin: 14px;
 }
 
+.items-tat {
+  padding: 0;
+}
 .items-tat li {
-  border: 2px solid rgba(151, 38, 38, 0.3215686275);
+  border: 2px solid rgba(175, 138, 68, 0.4784313725);
   border-radius: 10px;
   font-size: 18px;
   text-align: left;
-  color: #972626;
+  color: #f5f5f5;
   list-style: none;
   padding: 12px;
   margin: 12px;
@@ -654,41 +693,59 @@ div.valoracion input:checked ~ label {
   flex-wrap: none;
 }
 
-.menu__navi {
-  width: 100%;
+.navbar {
+  background-color: rgba(68, 68, 68, 0.3882352941);
 }
-.menu__navi .nav-list {
-  display: flex;
-  justify-content: space-around;
-  align-items: none;
-  flex-direction: none;
-  flex-wrap: none;
-  padding: 0;
+.navbar .container-fluid .navbar-brand {
+  color: #dbdbdb;
+  font-size: 38px;
+  margin: 0 20px;
+  padding: 0 20px;
 }
-.menu__navi .nav-list .list {
-  display: flex;
+.navbar .container-fluid .navbar-brand:hover {
+  color: rgba(175, 138, 68, 0.4784313725);
+  border-radius: 10px;
+  border: 2px solid rgba(175, 138, 68, 0.4784313725);
 }
-.menu__navi .nav-list .list .menu {
-  background-image: linear-gradient(to left, rgba(68, 68, 68, 0.3882352941), rgba(175, 138, 68, 0.4784313725));
-  border-radius: 20px;
-  font-size: 40px;
-  box-shadow: 4px 4px 10px #000000;
-  list-style: none;
-  text-decoration: none;
-  color: rgba(240, 240, 240, 0.8823529412);
-  cursor: pointer;
-  width: 200px;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: none;
-  transition: scale 0.4s ease;
-}
-.menu__navi .nav-list .list .menu:hover {
+.navbar .container-fluid .navbar-toggler {
   background-color: rgba(240, 240, 240, 0.8823529412);
-  color: rgba(68, 68, 68, 0.3882352941);
+}
+.navbar .container-fluid .collapse .d-flex .btn {
+  background-color: rgba(175, 138, 68, 0.4784313725);
+  color: #dbdbdb;
+}
+.navbar .container-fluid .collapse .d-flex .btn:hover {
+  box-shadow: 0 0 10px #e6ba67, 0 0 15px #e6ba67;
+}
+.navbar .container-fluid .collapse .d-flex .form-control {
+  background-color: rgba(240, 240, 240, 0.8823529412);
+}
+.navbar .container-fluid .collapse .nav-link {
+  color: #dbdbdb;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 10px;
+}
+.navbar .container-fluid .collapse .nav-link:hover {
+  color: rgba(175, 138, 68, 0.4784313725);
+  border-radius: 10px;
+  border: 2px solid rgba(175, 138, 68, 0.4784313725);
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  background-color: rgba(175, 138, 68, 0.4784313725);
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a {
+  color: #f5f5f5;
+  text-align: center;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a:hover {
+  background-color: rgba(68, 68, 68, 0.3882352941);
+  color: #000000;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu li a:active {
+  background-color: #e6ba67;
+  color: #000000;
 }
 
 .footer-content {
@@ -780,7 +837,7 @@ div.valoracion input:checked ~ label {
   text-decoration: none;
   color: rgba(240, 240, 240, 0.8823529412);
   cursor: pointer;
-  width: 200px;
+  width: 100%;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -788,6 +845,7 @@ div.valoracion input:checked ~ label {
   flex-direction: none;
   flex-wrap: none;
   transition: scale 0.4s ease;
+  padding: 42px;
 }
 .footer-content .footer__nav__menu .nav-list .list .menu:hover {
   background-color: rgba(240, 240, 240, 0.8823529412);
@@ -846,20 +904,23 @@ div.valoracion input:checked ~ label {
     width: 80%;
     margin: 0;
   }
-  body .menu__navi .nav-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    flex-direction: column;
-  }
-  body .menu__navi .nav-list .list .menu {
-    width: 100%;
-    height: 100%;
-    padding: 20px 5px;
-    margin: 5px 0;
+  body .navbar-expand-lg .navbar-nav .dropdown-menu li a {
+    text-align: center;
   }
   body .content-gral {
     flex-direction: column;
+  }
+  body .content-gral .tattoos .content-tattoos #color {
+    flex-direction: column;
+    height: 320px;
+  }
+  body .content-gral .tattoos .content-tattoos #bandg {
+    flex-direction: column;
+    height: 320px;
+  }
+  body .content-gral .tattoos .content-tattoos #linea {
+    flex-direction: column;
+    height: 320px;
   }
   body .content-gral .presenta {
     justify-content: center;
@@ -918,8 +979,11 @@ div.valoracion input:checked ~ label {
     width: 100%;
     flex-direction: column;
   }
+  body .footer-content .footer__nav__menu .nav-list .list {
+    justify-content: center;
+  }
   body .footer-content .footer__nav__menu .nav-list .list .menu {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding: 20px 5px;
     margin: 5px 0;
@@ -957,6 +1021,9 @@ div.valoracion input:checked ~ label {
   body .cab .name-logo-animation {
     font-size: 60px;
   }
+  body .footer-content .footer__nav__menu .nav-list .list .menu {
+    padding: 11px 30px;
+  }
 }
 @media (max-width: 1020px) and (min-width: 769px) {
   body {
@@ -968,13 +1035,14 @@ div.valoracion input:checked ~ label {
     grid-template-areas: "header" "nav" "main" "aside" "footer";
   }
   body .cab .name-log-animation {
-    font-size: 30px;
-    top: 13px;
+    font-size: 45px;
+    top: 4%;
+    left: 9%;
   }
   body .cab .name-logo-animation {
-    font-size: 30px;
-    top: 64px;
-    left: 100px;
+    font-size: 40px;
+    top: 13%;
+    left: 13%;
   }
   body .name-log-animation {
     font-size: 50px;
@@ -1007,7 +1075,7 @@ div.valoracion input:checked ~ label {
   body .footer-content .footer__nav__menu .nav-list .list .menu {
     width: 100%;
     height: 100%;
-    padding: 5px;
+    padding: 11px 25px;
     font-size: 30px;
   }
 }
@@ -1063,17 +1131,8 @@ div.valoracion input:checked ~ label {
     width: 80%;
     margin: 0;
   }
-  body .menu__navi .nav-list {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-    flex-direction: column;
-  }
-  body .menu__navi .nav-list .list .menu {
-    width: 100%;
-    height: 100%;
-    padding: 20px 5px;
-    margin: 5px 0;
+  body .navbar-expand-lg .navbar-nav .dropdown-menu li a {
+    text-align: center;
   }
   body .content-gral {
     flex-direction: column;
@@ -1115,6 +1174,18 @@ div.valoracion input:checked ~ label {
   body .content-gral .posttattoo .posttattoo1 .cicatrizado {
     width: 100%;
   }
+  body .content-gral .tattoos .content-tattoos #color {
+    flex-direction: column;
+    height: 320px;
+  }
+  body .content-gral .tattoos .content-tattoos #bandg {
+    flex-direction: column;
+    height: 320px;
+  }
+  body .content-gral .tattoos .content-tattoos #linea {
+    flex-direction: column;
+    height: 320px;
+  }
   body .aside-content {
     width: unset;
     height: unset;
@@ -1132,8 +1203,11 @@ div.valoracion input:checked ~ label {
     width: 100%;
     flex-direction: column;
   }
+  body .footer-content .footer__nav__menu .nav-list .list {
+    justify-content: center;
+  }
   body .footer-content .footer__nav__menu .nav-list .list .menu {
-    width: 100%;
+    width: 90%;
     height: 100%;
     padding: 20px 5px;
     margin: 5px 0;
@@ -1165,8 +1239,15 @@ div.valoracion input:checked ~ label {
   .content-gral {
     flex-direction: column;
   }
+  .content-gral .body-carrusel-design {
+    display: flex;
+    flex-direction: column;
+  }
   .content-gral .carousel {
     width: 100%;
+  }
+  .content-gral .carousel .carousel-caption .mods {
+    font-size: 25px;
   }
   .content-gral .body-carrusel-design {
     width: 100%;
@@ -1176,6 +1257,7 @@ div.valoracion input:checked ~ label {
   }
   .content-gral .body-carrusel-design .titledis .dis {
     width: 100%;
+    height: 320px;
     flex-direction: column;
   }
   .content-gral button .modalcont {

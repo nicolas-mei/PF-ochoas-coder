@@ -70,18 +70,8 @@
 
         //BARRA DE NAVEGACION
 
-        .menu__navi .nav-list {
-            display: flex;
-            justify-content: space-around;
-            padding: 0;
-            flex-direction: column;
-
-            .list .menu {
-                width: 100%;
-                height: 100%;
-                padding: 20px 5px;
-                margin: 5px 0;
-            }
+        .navbar-expand-lg .navbar-nav .dropdown-menu li a {
+            text-align: center;
         }
 
 
@@ -90,6 +80,20 @@
 
         .content-gral {
             flex-direction: column;
+            .tattoos .content-tattoos #color {
+                flex-direction: column;
+                height: 320px;
+                
+                
+            }
+            .tattoos .content-tattoos #bandg {
+                flex-direction: column;
+                height: 320px;
+            }
+            .tattoos .content-tattoos #linea {
+                flex-direction: column;
+                height: 320px;
+            }
 
             .presenta {
                 justify-content: center;
@@ -168,12 +172,15 @@
                 width: 100%;
                 flex-direction: column;
 
-                .list .menu {
-                    width: 100%;
-                    height: 100%;
-                    padding: 20px 5px;
-                    margin: 5px 0;
-                }
+                .list {
+                    justify-content: center;
+                    .menu {
+                        width: 90%;
+                        height: 100%;
+                        padding: 20px 5px;
+                        margin: 5px 0;
+                    }
+                } 
             }
 
             .footer__content__redes {

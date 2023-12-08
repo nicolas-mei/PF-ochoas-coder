@@ -20,9 +20,12 @@
 @mixin layout-content-tattoo {
     background-color: $color-grey2-tr;
     border-radius: $radius;
-    @include w-h ($full-with-margin, 213px);
+    @include w-h ($full-with-margin, 220px);
     overflow: auto;
     @include flex-just-align-dire-wrap (space-around, center, none, wrap);
+    animation-name: animation-prod;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
 }
 
 //padding and margin
@@ -62,34 +65,39 @@
 
 @keyframes rot-logo {
     10% {
-        transform: rotate(36deg);
+       scale: 1.1;
+       box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
     }
     20% {
-        transform: rotate(72deg);
+       scale: 1;
     }  
     30% {
-        transform: rotate(108deg);
+       scale: 1.1;
+       box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
     }  
     40% {
-        transform: rotate(144deg);
+        scale: 1;
     }    
     50%{
-        transform: rotate(180deg);
+        scale: 1.1;
+        box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
     }
     60% {
-        transform: rotate(216deg);
+       scale: 1;
     }
     70% {
-        transform: rotate(252deg);
+        scale: 1.1;
+        box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
     }
     80% {
-        transform: rotate(288deg);
+       scale: 1;
     }
     90% {
-        transform: rotate(324deg);
+       scale: 1.1;
+       box-shadow: 0 0 10px aliceblue, 0 0 20px aliceblue;
     }
     100% {
-        transform: rotate(360deg);
+       scale: 1;
     }
 }
 @keyframes name-logo {
@@ -104,3 +112,14 @@
     }
 }
 
+@keyframes animation-prod {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}

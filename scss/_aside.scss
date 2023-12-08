@@ -52,21 +52,24 @@ div.valoracion {
 }
 .indicaciones p{
     font-size: 29px;
-    text-align-last: center;
-    color: $color-red;
+    text-align: center;
+    color: $color-white;
     text-decoration: underline;
     @include flex-just-align-dire-wrap (none, center, none, none);
     margin: 14px;
 }
-.items-tat li{
-    @include border-mx (border-red);
-    border-radius: $radius;
-    font-size: 18px;
-    text-align: left;
-    color: $color-red;
-    list-style: none;
-    @include padd-marg (12px, 12px);
-}
+.items-tat {
+    padding: 0;
+    li{
+        @include border-mx (b-biege);
+        border-radius: $radius;
+        font-size: 18px;
+        text-align: left;
+        color: $color-white;
+        list-style: none;
+        @include padd-marg (12px, 12px);
+    }
+} 
 .img-elec p{
     font-size: 18px;
     text-align: center;

@@ -1,29 +1,74 @@
-.menu__navi {
-    width: $full;
-    .nav-list {
-      @include flex-just-align-dire-wrap(space-around, none, none, none); 
-        padding: 0;
-        .list {
-            display: flex;
-            .menu{
-                background-image: linear-gradient(to left, $color-grey2-tr, $color-beige2-tr);
-                border-radius: $radius1;
-                font-size: 40px;
-                box-shadow: 4px 4px 10px $color-black;
-                list-style: none;
-                text-decoration: none;
-                color: $color-grey3-tr;
-                cursor: pointer;
-                @include w-h (200px, 70px);
-                @include flex-just-align-dire-wrap(center, center, none, none); 
-                transition: $efect-transition;
+.navbar {
+    background-color: $color-grey2-tr;
+
+    .container-fluid {
+        .navbar-brand {
+            color: $color-grey3;
+            font-size: 38px;
+            margin: 0 20px;
+            padding: 0 20px;
+
+            &:hover {
+                color: $color-beige2-tr;
+                border-radius: $radius;
+                @include border-mx (b-biege);
             }
-            .menu:hover {
-                background-color: $color-grey3-tr;
-                color: $color-grey2-tr;
+        }
+
+        .navbar-toggler {
+            background-color: $color-grey3-tr;
+        }
+
+        .collapse {
+            .d-flex {
+                .btn {
+                    background-color: $color-beige2-tr;
+                    color: $color-grey3;
+                    &:hover {
+                        box-shadow: 0 0 10px $color-beige1, 0 0 15px $color-beige1;
+                    }
+                }
+
+                .form-control {
+                    background-color: $color-grey3-tr;
+                }
+            }
+
+            .nav-link {
+                color: $color-grey3;
+                font-size: 30px;
+                text-align: center;
+                margin: 0 10px;
+
+                &:hover {
+                    color: $color-beige2-tr;
+                    border-radius: $radius;
+                    @include border-mx (b-biege);
+
+                }
+
+
             }
         }
     }
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    background-color: $color-beige2-tr;
 
+    li a {
+        color: $color-white;
+        text-align: center;
+
+        &:hover {
+            background-color: $color-grey2-tr;
+            color: $color-black;
+        }
+
+        &:active {
+            background-color: $color-beige1;
+            color: $color-black;
+        }
+
+    }
+}

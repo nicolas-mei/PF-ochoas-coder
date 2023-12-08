@@ -78,9 +78,11 @@
                     text-decoration: none;
                     color: $color-grey3-tr;
                     cursor: pointer;
-                    @include w-h (200px, 70px);
+                    @include w-h ($full, 70px);
                     @include flex-just-align-dire-wrap (center, center, none, none);
                     transition: $efect-transition;
+                    padding: 42px;
+                    
 
                     &:hover {
                         background-color: $color-grey3-tr;

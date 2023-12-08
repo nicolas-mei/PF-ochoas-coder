@@ -2,9 +2,16 @@
     
     .content-gral {
         flex-direction: column;
+        .body-carrusel-design {
+            display: flex;
+            flex-direction: column;
+        }
     
         .carousel {
             width: 100%;
+            .carousel-caption .mods {
+                font-size: 25px;
+            }
         }
     
         .body-carrusel-design {
@@ -15,6 +22,7 @@
     
                 .dis {
                     width: 100%;
+                    height: 320px;
                     flex-direction: column;
                 }
             }

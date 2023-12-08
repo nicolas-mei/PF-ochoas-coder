@@ -9,14 +9,15 @@
     border-radius: $radius1;
     @include border-mx (b-grey);
     @include flex-just-align-dire-wrap (space-between, none, none, none);
+    
 
     .name-log-animation {
         font-family: fantasy;
         font-size: 70px;
         color: $color-grey2;
         position: absolute;
-        top: 15px;
-        left: 82px;
+        top: 143px;
+        left: 113px;
         animation-name: name-logo;
         animation-duration: 5s;
         animation-fill-mode: forwards;
@@ -28,8 +29,8 @@
         font-size: 70px;
         color: $color-grey2;
         position: absolute;
-        top: 74px;
-        left: 141px;
+        top: 231px;
+        left: 175px;
         animation-name: name-logo;
         animation-duration: 5s;
         animation-fill-mode: forwards;
@@ -69,8 +70,8 @@
         margin-right: 41px;
         @include border-mx (b-grey);
         animation: rot-logo;
-        animation-duration: 4s;
-        animation-timing-function: steps(20);
+        animation-duration: 5s;
+        animation-timing-function: ease;
         animation-iteration-count: 1;
         position: relative;
     }
