@@ -1,11 +1,15 @@
 .content-gral {
     @include flex-just-align-dire-wrap(space-around, center, row, none);
 
+    .content__dis {
+        height: auto;
+    }
+
     main button {
         bottom: unset;
         cursor: pointer;
     }
-//
+
     .presenta {
         @include flex-just-align-dire-wrap(none, none, column, none);
         margin: 20px;
@@ -13,7 +17,7 @@
 
         h1 {
             @include border-mx (b-grey);
-            background-image: linear-gradient(to top, $color-grey2-tr,  $color-beige2-tr);
+            background-image: linear-gradient(to top, $color-grey2-tr, $color-beige2-tr);
             width: 204px;
             border-radius: $radius;
             font-size: 37px;
@@ -25,7 +29,7 @@
         }
 
         .presentacion {
-            background-image: linear-gradient(to top, $color-grey2-tr,  $color-beige2-tr);
+            background-image: linear-gradient(to top, $color-grey2-tr, $color-beige2-tr);
             border-radius: $radius;
             color: $color-grey3-tr;
             box-shadow: 4px 4px 10px $color-black;
@@ -41,20 +45,27 @@
         .carousel-inner {
             @include w-h ($full, $full);
             padding: 30px;
-            
+
         }
+
         .carousel-item {
             height: $full;
+
+            img {
+                border-radius: $radius1;
+                box-shadow: 4px 4px 15px $color-black;
+            }
+
             a img {
                 @include w-h ($full, $full);
                 border-radius: $radius1;
-                    box-shadow: 4px 4px 15px $color-black;
-    
-    
+                box-shadow: 4px 4px 15px $color-black;
+
+
             }
         }
 
-        
+
 
         .carousel-caption .mods {
             font-size: 40px;
@@ -97,6 +108,7 @@
         @include w-h ($full-with-margin, $full);
         @include flex-just-align-dire-wrap (center, center, column, none);
         box-shadow: 4px 5px 15px $color-grey3-tr;
+
         h1 {
             font-size: 50px;
             color: $color-grey3-tr;
@@ -104,23 +116,24 @@
             text-align: center;
         }
 
-        form{
+        form {
             width: $full-with-margin;
+
             .form1 {
                 width: 90%;
                 padding: 0;
                 @include flex-just-align-dire-wrap (center, none, column, none);
-    
+
                 .form-items {
                     list-style: none;
                     margin: 15px 0;
-    
+
                     .label-pal {
                         font-size: 30px;
                         color: $color-grey3-tr;
                         @include flex-just-align-dire-wrap (flex-start, none, none, none);
                     }
-    
+
                     .imput-content {
                         width: $full;
                         background-color: $color-grey2-tr;
@@ -133,7 +146,7 @@
                         display: flex;
                     }
                 }
-    
+
                 .btnform {
                     float: left;
                     width: 129px;
@@ -144,16 +157,16 @@
                     border-radius: $radius;
                     cursor: pointer;
                     transition: $efect-transition;
-    
+
                     &:hover {
                         background-color: $color-grey2-tr;
                         color: $color-beige2-tr;
                     }
                 }
-        }
+            }
 
-       
-        
+
+
 
         }
     }
@@ -214,23 +227,8 @@
         }
 
         .dis {
-            @include w-h ($full-with-margin, 800px);
-            overflow: auto;
-            @include flex-just-align-dire-wrap (space-around, center, none, wrap);
-            animation-name: animation-prod;
-            animation-duration: 3s;
-            animation-timing-function: ease-in-out;
+            @include w-h ($full, $full);
 
-            .btn1 {
-                width: 230px;
-            }
-
-            .imgcont {
-                width: 230px;
-                padding: 10px;
-                border-radius: $radius1;
-                box-shadow: 4px 4px 15px $color-black;
-            }
         }
 
         .modal-content {
@@ -295,6 +293,7 @@
 
     .tattoos {
         @include flex-just-align-dire-wrap (center, center, column, none);
+        width: 100%;
 
         .realizados {
             background-color: $color-beige2-tr;
@@ -309,6 +308,7 @@
 
         .content-tattoos {
             @include flex-just-align-dire-wrap (center, center, column, none);
+            width: 90%;
             padding: 15px;
 
             .title-tattoos {
@@ -322,7 +322,7 @@
                 @include padd-marg (5px, 10px);
             }
 
-            #color {
+            .tattoos__realizados {
                 @include layout-content-tattoo;
 
                 .imgcont {
@@ -332,25 +332,6 @@
                 }
             }
 
-            #bandg {
-                @include layout-content-tattoo;
-
-                .imgcont {
-                    width: 230px;
-                    border-radius: $radius1;
-                    box-shadow: 4px 4px 15px $color-black;
-                }
-            }
-
-            #linea {
-                @include layout-content-tattoo;
-
-                .imgcont {
-                    width: 230px;
-                    border-radius: $radius1;
-                    box-shadow: 4px 4px 15px $color-black;
-                }
-            }
         }
     }
 }

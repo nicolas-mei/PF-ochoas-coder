@@ -80,19 +80,10 @@
 
         .content-gral {
             flex-direction: column;
-            .tattoos .content-tattoos #color {
+
+            .tattoos .content-tattoos .tattoos__realizados {
                 flex-direction: column;
-                height: 320px;
-                
-                
-            }
-            .tattoos .content-tattoos #bandg {
-                flex-direction: column;
-                height: 320px;
-            }
-            .tattoos .content-tattoos #linea {
-                flex-direction: column;
-                height: 320px;
+                height: 380px;
             }
 
             .presenta {
@@ -174,13 +165,14 @@
 
                 .list {
                     justify-content: center;
+
                     .menu {
                         width: 90%;
                         height: 100%;
                         padding: 20px 5px;
                         margin: 5px 0;
                     }
-                } 
+                }
             }
 
             .footer__content__redes {

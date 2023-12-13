@@ -67,7 +67,7 @@
 .grid-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px 300px 1100px 600px;
+  grid-template-rows: 100px 300px 1200px 600px;
   grid-template-areas: "nav    nav    nav    nav" "header header header header" "main   main   main   aside" "footer footer footer footer";
   row-gap: 20px;
 }
@@ -189,6 +189,9 @@ body {
   flex-direction: row;
   flex-wrap: none;
 }
+.content-gral .content__dis {
+  height: auto;
+}
 .content-gral main button {
   bottom: unset;
   cursor: pointer;
@@ -237,6 +240,10 @@ body {
 }
 .content-gral .carousel .carousel-item {
   height: 100%;
+}
+.content-gral .carousel .carousel-item img {
+  border-radius: 20px;
+  box-shadow: 4px 4px 15px #000000;
 }
 .content-gral .carousel .carousel-item a img {
   width: 100%;
@@ -407,26 +414,8 @@ body {
   margin: 0 0 50px 0;
 }
 .content-gral .body-carrusel-design .dis {
-  width: 90%;
-  height: 800px;
-  overflow: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: wrap;
-  animation-name: animation-prod;
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-}
-.content-gral .body-carrusel-design .dis .btn1 {
-  width: 230px;
-}
-.content-gral .body-carrusel-design .dis .imgcont {
-  width: 230px;
-  padding: 10px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px #000000;
+  width: 100%;
+  height: 100%;
 }
 .content-gral .body-carrusel-design .modal-content {
   width: 100%;
@@ -487,6 +476,7 @@ body {
   align-items: center;
   flex-direction: column;
   flex-wrap: none;
+  width: 100%;
 }
 .content-gral .tattoos .realizados {
   background-color: rgba(175, 138, 68, 0.4784313725);
@@ -504,6 +494,7 @@ body {
   align-items: center;
   flex-direction: column;
   flex-wrap: none;
+  width: 90%;
   padding: 15px;
 }
 .content-gral .tattoos .content-tattoos .title-tattoos {
@@ -517,7 +508,7 @@ body {
   padding: 5px;
   margin: 10px;
 }
-.content-gral .tattoos .content-tattoos #color {
+.content-gral .tattoos .content-tattoos .tattoos__realizados {
   background-color: rgba(68, 68, 68, 0.3882352941);
   border-radius: 10px;
   width: 90%;
@@ -532,47 +523,7 @@ body {
   animation-duration: 4s;
   animation-timing-function: ease-out;
 }
-.content-gral .tattoos .content-tattoos #color .imgcont {
-  width: 230px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px #000000;
-}
-.content-gral .tattoos .content-tattoos #bandg {
-  background-color: rgba(68, 68, 68, 0.3882352941);
-  border-radius: 10px;
-  width: 90%;
-  height: 220px;
-  overflow: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: wrap;
-  animation-name: animation-prod;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-}
-.content-gral .tattoos .content-tattoos #bandg .imgcont {
-  width: 230px;
-  border-radius: 20px;
-  box-shadow: 4px 4px 15px #000000;
-}
-.content-gral .tattoos .content-tattoos #linea {
-  background-color: rgba(68, 68, 68, 0.3882352941);
-  border-radius: 10px;
-  width: 90%;
-  height: 220px;
-  overflow: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: wrap;
-  animation-name: animation-prod;
-  animation-duration: 4s;
-  animation-timing-function: ease-out;
-}
-.content-gral .tattoos .content-tattoos #linea .imgcont {
+.content-gral .tattoos .content-tattoos .tattoos__realizados .imgcont {
   width: 230px;
   border-radius: 20px;
   box-shadow: 4px 4px 15px #000000;
@@ -671,7 +622,7 @@ div.valoracion input:checked ~ label {
 .items-tat li {
   border: 2px solid rgba(175, 138, 68, 0.4784313725);
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 27px;
   text-align: left;
   color: #f5f5f5;
   list-style: none;
@@ -738,6 +689,7 @@ div.valoracion input:checked ~ label {
 .navbar-expand-lg .navbar-nav .dropdown-menu li a {
   color: #f5f5f5;
   text-align: center;
+  font-size: 25px;
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu li a:hover {
   background-color: rgba(68, 68, 68, 0.3882352941);
@@ -910,17 +862,9 @@ div.valoracion input:checked ~ label {
   body .content-gral {
     flex-direction: column;
   }
-  body .content-gral .tattoos .content-tattoos #color {
+  body .content-gral .tattoos .content-tattoos .tattoos__realizados {
     flex-direction: column;
-    height: 320px;
-  }
-  body .content-gral .tattoos .content-tattoos #bandg {
-    flex-direction: column;
-    height: 320px;
-  }
-  body .content-gral .tattoos .content-tattoos #linea {
-    flex-direction: column;
-    height: 320px;
+    height: 380px;
   }
   body .content-gral .presenta {
     justify-content: center;
@@ -1137,6 +1081,10 @@ div.valoracion input:checked ~ label {
   body .content-gral {
     flex-direction: column;
   }
+  body .content-gral .tattoos .content-tattoos .tattoos__realizados {
+    flex-direction: column;
+    height: 380px;
+  }
   body .content-gral .presenta {
     justify-content: center;
     align-items: center;
@@ -1174,17 +1122,12 @@ div.valoracion input:checked ~ label {
   body .content-gral .posttattoo .posttattoo1 .cicatrizado {
     width: 100%;
   }
-  body .content-gral .tattoos .content-tattoos #color {
+  body .content-gral .tattoos .content-tattoos .tattoos__realizados {
     flex-direction: column;
-    height: 320px;
+    flex-wrap: wrap;
   }
-  body .content-gral .tattoos .content-tattoos #bandg {
-    flex-direction: column;
-    height: 320px;
-  }
-  body .content-gral .tattoos .content-tattoos #linea {
-    flex-direction: column;
-    height: 320px;
+  body .content-gral .tattoos .content-tattoos .tattoos__realizados .imgcont {
+    display: flex;
   }
   body .aside-content {
     width: unset;
